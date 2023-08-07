@@ -1,0 +1,229 @@
+﻿<img class="img-contact" src="data:image/jpeg;base64,@UserModel.imageBase64[ImgSwitchFirst]" @onclick="() =>{Switches.DoubleTachesCancel();}" />
+
+@*Стрелдки*@
+<div class="nav-container" style="margin:0px auto; ">
+    <div class="container-like-buttom">
+        <div class="triangle-left" style="@LeftArrowView" @onclick="ViewingPhotosLeft"></div>
+        <div class="triangle-right" style="@RightArrowView" @onclick="ViewingPhotosRight"></div>
+    </div>
+</div>
+
+<div class="hr-washed" style="padding-bottom: 25%; width:100%">
+    <div>
+        <div>@UserModel.FirstName.</div>
+    </div>
+    <hr />
+    
+    <div>
+        <span>Birthday </span>
+        <div>@UserModel.DateOfBirth.ToString("D") </div>
+    </div>
+    <hr />
+
+    <div>
+        <span>Gender</span>
+        <div>@UserModel.Gender.</div>
+    </div>
+    <hr />
+
+    <div>
+        <span>Сountry</span>
+        <div>@UserModel.Сountry.</div>
+    </div>
+    <hr />
+
+    <div>
+        <span>City</span>
+        <div>@UserModel.City.</div>
+    </div>
+    <hr />
+
+    <div>
+        <span>Orientation</span>
+        <div>@GenderOrientation.</div>
+    </div>
+    <hr />
+
+    <div>
+        <span>Height</span>
+        <div>
+            @if (UserModel.Height is not null)
+            {
+                <span>@UserModel.Height.</span>
+            }
+            else
+            {
+                <span>None.</span>
+            }
+        </div>
+    </div>
+    <hr />
+
+    <div>
+        <span>Weight</span>
+        <div>
+            @if (UserModel.Weight is not null)
+            {
+                <span>@UserModel.Weight.</span>
+            }
+            else
+            {
+                <span>None.</span>
+            }
+        </div>
+    </div>
+    <hr />
+
+    <div>
+        <span>Language</span>
+        <div>
+            @if (!string.IsNullOrEmpty(UserModel.Language))
+            {
+                <span>@UserModel.Language.</span>
+            }
+            else
+            {
+                <span>None.</span>
+            }
+        </div>
+    </div>
+    <hr />
+
+    <div style="word-wrap:break-word; overflow-wrap: break-word">
+        <span>AboutMe</span>
+        <div>
+            @UserModel.AboutMe
+        </div>
+    </div>
+    <hr />
+
+    <div style="word-wrap:break-word; overflow-wrap: break-word">
+        <span>Interests</span>
+        <div>
+            @UserModel.Interests
+        </div>
+    </div>
+    <hr />
+
+    @*Ban User*@
+    @if (SwitchBanUser)
+    {
+        <button class="btn btn-secondary" @onclick="BlockUser">Block user</button>
+    }
+</div>
+
+@code {   
+    [Parameter] public MainDataJson UserModel { get; set; }
+  
+    //Стрелки
+    private string LeftArrowView { get; set; } = "";
+    private string RightArrowView { get; set; } = "";   
+    private string GenderOrientation { get; set; } = "";
+    //переключалка фото
+    private byte ImgSwitchFirst { get; set; } = 0;
+
+    //дЛЯ БАНА
+    [Parameter] public bool SwitchBanUser { get; set; } = false;
+    //Нужел только для бана
+    [Parameter] public List<MainDataJson> Contacts { get; set; }
+
+    protected async override void OnInitialized()
+    {        
+        //Отрисовка стрелок
+        Task task = LoadingImgArrowAsync();
+        //Определение ориентации
+        Task task1 = GetGenderInfo();
+        await Task.WhenAll(task, task1);
+
+        await InvokeAsync(StateHasChanged);
+    }
+
+    //Method: Определение ориентации
+    private async Task GetGenderInfo()
+    {
+        await Task.Run(() =>
+        {
+            if ((UserModel.AponentJs.Man && UserModel.AponentJs.Woman) || (!UserModel.AponentJs.Man && !UserModel.AponentJs.Woman))
+                GenderOrientation = "Man & Woman";
+            else if (UserModel.AponentJs.Man && !UserModel.AponentJs.Woman)
+                GenderOrientation = "Man";
+            else if (!UserModel.AponentJs.Man && UserModel.AponentJs.Woman)
+                GenderOrientation = "Woman";
+        });
+    }
+
+    //Method: Отрисовываю стрелки для просмотра фото
+    private async Task LoadingImgArrowAsync()
+    {
+        await Task.Run(() =>
+        {
+            //отрисовка стрелок  если фото одно
+            if (UserModel.imageBase64.Count() == 1)
+            {
+                RightArrowView = "border-left: 12vw solid #1863c0e3;";
+                LeftArrowView = "border-right: 12vw solid #1863c0e3;";
+            }
+            else
+            {
+                RightArrowView = "border-left: 12vw solid #27d913e3;";
+                LeftArrowView = "border-right: 12vw solid #1863c0e3;";
+            }
+        });
+    }
+
+    //Mthod:Просмотр фотографий в Право + изменения вида стрелок
+    private void ViewingPhotosRight()
+    {
+        if (ImgSwitchFirst >= 0 && ImgSwitchFirst < UserModel.imageBase64.Count() - 1)
+        {
+            //Инкрементирую номер фото
+            ImgSwitchFirst++;
+
+            //Проверка на смену вида стрелки
+            if (ImgSwitchFirst > 0 && ImgSwitchFirst == UserModel.imageBase64.Count() - 1)
+            {
+                RightArrowView = "border-left: 12vw solid #1863c0e3;";
+                LeftArrowView = "border-right: 12vw solid #27d913e3;";
+            }
+            else if (ImgSwitchFirst > 0 && ImgSwitchFirst < UserModel.imageBase64.Count() - 1)
+            {
+                LeftArrowView = "border-right: 12vw solid #27d913e3;";
+                RightArrowView = "border-left: 12vw solid #27d913e3;";
+
+            }
+            else if (ImgSwitchFirst == 0 && ImgSwitchFirst < UserModel.imageBase64.Count() - 1)
+            {
+                LeftArrowView = "border-right: 12vw solid #1863c0e3;";
+                RightArrowView = "border-left: 12vw solid #27d913e3;";
+            }
+        }
+    }
+
+    //Mthod:Просмотр фотографий в В лево
+    private void ViewingPhotosLeft()
+    {
+        if (ImgSwitchFirst > 0 && ImgSwitchFirst <= UserModel.imageBase64.Count())
+        {
+            ImgSwitchFirst--;
+
+            if (ImgSwitchFirst > 0 && ImgSwitchFirst == UserModel.imageBase64.Count() - 1)
+            {
+                RightArrowView = "border-left: 12vw solid #27d913e3;";
+                LeftArrowView = "border-right: 12vw solid #1863c0e3;";
+            }
+            else if (ImgSwitchFirst > 0 && ImgSwitchFirst < UserModel.imageBase64.Count() - 1)
+            {
+                LeftArrowView = "border-right: 12vw solid #27d913e3;";
+                RightArrowView = "border-left: 12vw solid #27d913e3;";
+            }
+            else if (ImgSwitchFirst == 0 && ImgSwitchFirst < UserModel.imageBase64.Count() - 1)
+            {
+                LeftArrowView = "border-right: 12vw solid #1863c0e3;";
+                RightArrowView = "border-left: 12vw solid #27d913e3;";
+            }
+        }
+    }   
+    //Method: Block User
+    private void BlockUser() => Contacts.RemoveAt(Contacts.IndexOf(Contacts.FirstOrDefault(p => p?.Id == UserModel.Id)));
+}
+

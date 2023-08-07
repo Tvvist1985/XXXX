@@ -1,0 +1,39 @@
+﻿@inject IHttpClientService IHttpClientService
+@inject IChatClient Chat
+
+@if (!Switches.SwitchAboutUser && !Switches.SwitchChatOnContacts)
+{
+    <div style="padding-bottom: 25%;">
+        @foreach (var user in UserEvent.cubyCollection.DataForXXX.MyContacts)
+        {
+            <img class="img-contact" src="data:image/jpeg;base64,@user.imageBase64[0]" @onclick="() => {UserModel = user; Switches.DoubleTaches();}" />
+
+            <div class="nav-container" style=" margin:0px auto;">
+                <div class="container-like-buttom">
+                    @*кнопка для удаления*@
+                    <div class="my-btn my-font-size" @onclick="() =>  UserEvent.DeleteContact(user)">X</div>  
+
+                    @*лайк*@
+                    <div class="@UserEvent.LoadIcon(user)" @onclick="() => {UserEvent.CreateOrDeleteEvent(user); InvokeAsync(StateHasChanged);}"></div>
+                    @UserEvent.MessageAboutLikes
+
+                    @*on chat*@
+                    <div class="my-btn my-font-size" @onclick="() => {UserModel = user; Switches.SwitchChatOnContacts = true;}">(&hellip;)</div>
+                </div>
+            </div>
+        }
+    </div>
+}
+else if (Switches.SwitchAboutUser)
+{
+   <AboutUser UserModel="UserModel"></AboutUser>
+}
+else
+{
+    <ChatComponent EventCallback="() => InvokeAsync(StateHasChanged)" User="UserModel" /> @*CHAT*@
+}
+
+@code {
+    [Parameter] public IUserEvent UserEvent { get; set; }  
+    private MainDataJson UserModel{ get; set; }           
+}

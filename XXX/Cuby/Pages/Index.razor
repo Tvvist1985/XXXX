@@ -1,0 +1,207 @@
+﻿@page "/"
+@using Models.DataModel.MainDataUserModel;
+@using Services.OtherActionWithCubySR;
+@inject IHttpClientService IHttpClientService
+@inject IChatClient Chat
+@inject IOtherActionWithCuby OtherAction
+
+
+@*переключалка с index*@
+@if (Switches.SwitchLoad)
+{
+    <LoadPage></LoadPage>       
+}
+else
+{
+    @if (Switches.SwitchXXX)
+    {    
+        @if (Switches.SwitchZeroUSersFromDB)
+        {
+            <div class="mainImg">
+                <img class="image-size" src="data:image/jpeg;base64,@Collection.UsersContainers[Collection.NumberContainerForSelectUser][Collection.NumberSelectUser].imageBase64[Collection.NumberPhoto]" />
+
+                @* низ*@
+                <div class="bottom-box">
+                    <div class="triangle-min" style="@OtherAction.LeftArrowView" @onclick="ViewingPhotosLeft"></div>
+
+                    <div class="main-name-age-box main-bottom-size">
+                        <div @onclick="() => {Switches.SelectMethodForSwitch(3);}">@Collection.UsersContainers[Collection.NumberContainerForSelectUser][Collection.NumberSelectUser].FirstName*</div>
+                        <div @onclick="() => {Switches.SelectMethodForSwitch(3);}">@Collection.UsersContainers[Collection.NumberContainerForSelectUser][Collection.NumberSelectUser].Age.</div>
+                    </div>
+
+                    <div class="triangle-min" style=" @OtherAction.RightArrowView" @onclick="ViewingPhotosRight"></div>
+                </div>
+            </div>
+            <h5 class="next-btn" @onclick="GetNextUser">NEXT</h5>
+        }
+        //Message
+        <h3 style="color:red; text-align:center">@MessageForAddUsers</h3>
+        if (!Switches.SwitchGlobalXXX)   @*Компоненты Логина*@
+        {
+            @if (!Switches.SwitchAccount)
+            {
+                <LoginAccount></LoginAccount>
+            }
+            else if (Switches.SwitchAccount)
+            {
+                <UserAccount></UserAccount>
+            }
+        }
+        else 
+        {                      
+            @if (!Switches.switchChatComponent) @* 2 СЛОЙ*@
+            {
+                <div class="layer2">
+                    <div class="btn-layer2 my-font-size" @onclick="() => {Switches.SelectMethodForSwitch(2);}"> &asymp;</div>
+                     @*лайк *@
+                    <div class="@UserEvent.LikeStyle" style="z-index:1;" @onclick="() => UserEvent.CreateOrDeleteEvent(Collection.UsersContainers[Collection.NumberContainerForSelectUser][Collection.NumberSelectUser])"></div>
+                        @UserEvent.MessageAboutLikes
+
+                    <div class="btn-layer2 my-font-size" @onclick="Switches.CloseOrOpenChat"> &hellip;</div>
+                </div>                
+            }
+            else
+            {
+                <ChatComponent User="@Collection.UsersContainers[Collection.NumberContainerForSelectUser][Collection.NumberSelectUser]"
+               CloseChat="top: calc((100vw / 10) * 10.8);"
+               HeightChat="height: calc(100vh - ((100vw / 10) * 13.0));"
+               EventCallback="() => InvokeAsync(StateHasChanged)"></ChatComponent>
+            }
+        }
+    }
+    @*поисковик*@
+    else if (Switches.SwitchSearchUser)
+    {
+        <SearchUser Collection="Collection"></SearchUser>
+    }
+    @*личная страница аппонента*@
+    else if (Switches.SwitchAboutUser)
+    {
+        <AboutUser UserModel="Collection.UsersContainers[Collection.NumberContainerForSelectUser][Collection.NumberSelectUser]"></AboutUser>
+    }
+    //Update or add current User
+    else if (Switches.SwitchAccount)
+    {
+        <UserAccount></UserAccount>                           
+    }
+     else if (Switches.SwitchContacts)
+    {
+        <ContactsListComp UserEvent="@UserEvent"> </ContactsListComp>       
+    }
+}
+
+@code {
+    [CascadingParameter] public Action LayoutAfterRender { get; set; }//Включат Нав меню   
+    private ICubyCollection Collection { get; set; }  //Класс перезарядки контейнеров    
+    private IUserEvent UserEvent { get; set; } //События  
+    private string MessageForAddUsers { get; set; }
+
+    protected override async void OnInitialized()
+    {             
+        LoginVM data = new AddJsonIdentity().DeserializeJsonFileAsync<LoginVM>(); //Получаю файлик с айнтефикацией
+        (DataForCuby, string) result = default;//Кортеж для ответа сервера
+
+        if (data is not null)
+        {         
+            result = await IHttpClientService.GetJSONAsync<DataForCuby>(AboutUsers.Controller, AboutUsers.GetUsers, data.Id, data.Email);  //Получаю данные от сервера
+
+            //checking for a sufficient number of users in the database
+            if (result.Item1.ManListJson.Count() > 0 && result.Item1.WomanListJson.Count() > 0)
+            {
+                IHttpClientService.JwtToken = result.Item1.JwtToken;//Сохраняю JWT токен
+                IHttpClientService.GetJWTTokenAsync(data.Email, data.Id); //Запускаю фоновую задачу для обновления JWT
+
+                Switches.SwitchGlobalXXX = true; //включаю нав меню
+                Switches.SwitchZeroUSersFromDB = true;
+                Chat.Chat(result.Item1.JwtToken);//подрубаюсь к хабу
+                Chat.DataForXXX = result.Item1; //Для изменения перезаписи чатов в коллекциях
+
+                LayoutAfterRender.Invoke();//включаю нав меню
+            }
+            else ClearData(ref data, (byte)result.Item1.ManListJson.Count(), (byte)result.Item1.WomanListJson.Count());
+
+        }       
+        else
+        {
+            result = await IHttpClientService.GetJSONAsync<DataForCuby>(AboutUsers.Controller, AboutUsers.GetRandomUsers);  //Получаю рандомные данные
+                                                                                                                            ////ЗАГЛУШКА                                                                                                              
+            if (result.Item1.ManListJson.Count() > 0 && result.Item1.WomanListJson.Count() > 0)
+                Switches.SwitchZeroUSersFromDB = true;
+            else ClearData(ref data, (byte)result.Item1.ManListJson.Count(), (byte)result.Item1.WomanListJson.Count());           
+        }
+
+        Collection = new CubyCollection(result.Item1, new BirthdayValidationService()); //Класс перезарядки поьзлователей
+        if (Switches.SwitchZeroUSersFromDB)
+        {
+            //Тза за бага с Wait() пришлось делать так  
+            await Collection.OnInitializedContainerAsync();//Перезаряжаю первый
+            Collection.OnInitializedContainerAsync();  //отправляю на перезарядку второго контейнера
+
+            //Render arrows for IMG
+            OtherAction.LoadingImgArrowAsync((byte)Collection.UsersContainers[Collection.NumberContainerForSelectUser][Collection.NumberSelectUser].imageBase64.Length);
+
+            //Initialized User event
+            if (data is not null)
+                UserEvent = new UserEvent(Collection, IHttpClientService,
+                        Collection.UsersContainers[Collection.NumberContainerForSelectUser][Collection.NumberSelectUser].Id,
+                        Collection.NumberContainerForSelectUser);
+        }
+
+        Switches.Render += OnRender;//Инициализирую событие для рендора
+        Switches.SwitchLoad = false; //Выключаю загрузочную вью        
+
+        await InvokeAsync(StateHasChanged);
+    }   
+
+    //EVENT: Viewing img right
+    private void ViewingPhotosRight()
+    {
+        if (Collection.NumberPhoto >= 0 && Collection.NumberPhoto < Collection.UsersContainers[Collection.NumberContainerForSelectUser][Collection.NumberSelectUser].imageBase64.Length - 1)
+        {
+            Collection.NumberPhoto++;
+            OtherAction.ViewingPhotosRight(Collection.NumberPhoto, (byte)Collection.UsersContainers[Collection.NumberContainerForSelectUser][Collection.NumberSelectUser].imageBase64.Length);
+        }
+    }
+
+    //EVENT: Viewing img left
+    private void ViewingPhotosLeft()
+    {
+        if (Collection.NumberPhoto > 0 && Collection.NumberPhoto <= Collection.UsersContainers[Collection.NumberContainerForSelectUser][Collection.NumberSelectUser].imageBase64.Length)
+        {
+            Collection.NumberPhoto--;
+            OtherAction.ViewingPhotosLeft(Collection.NumberPhoto, (byte)Collection.UsersContainers[Collection.NumberContainerForSelectUser][Collection.NumberSelectUser].imageBase64.Length);
+        }        
+    }    
+
+    //EVENT: Get next user
+    private void GetNextUser()
+    {
+        //Get next user
+        Collection.GetNextUser();
+        //Render like icon 
+        UserEvent.LoadIcon(Collection.UsersContainers[Collection.NumberContainerForSelectUser][Collection.NumberSelectUser].Id, Collection.NumberContainerForSelectUser);
+        //Render arrows
+        OtherAction.LoadingImgArrowAsync((byte)Collection.UsersContainers[Collection.NumberContainerForSelectUser][Collection.NumberSelectUser].imageBase64.Length);
+    }
+
+    //Method : рендер для событий
+    private async Task OnRender() => await InvokeAsync(StateHasChanged);
+
+    //Method: Clear data 
+    private void ClearData(ref LoginVM dataResponce, byte quantityMans, byte quantityWomans)
+    {
+        byte users = 2;
+        byte man = 0;
+        byte woman = 0;
+        if (dataResponce?.Gender == "Man") man++;
+        else if (dataResponce?.Gender == "Woman") woman++;
+        //Remove data from responce
+        dataResponce = null;
+
+        //Remove identity file
+        new AddJsonIdentity().DeleteFileIndentiy();
+        
+        //Create message
+        MessageForAddUsers = $"Add mans {users - (quantityMans + man)} and womans {users - (quantityWomans + woman)}.";
+    }
+}

@@ -1,0 +1,515 @@
+﻿@inject BirthdayValidationService BirthdayValidation
+@inject IHttpClientService HttpClientService
+@inject NavigationManager NavigationManager
+@using System.Drawing;
+@using System.Drawing.Imaging;
+@using System.Text.Json;
+
+<h5 class="Success">@userVM.Success</h5>
+<div style="@CSS">
+    <EditForm Model="userVM" OnValidSubmit="SelestModeAsync">
+        <DataAnnotationsValidator></DataAnnotationsValidator>
+        <label>
+            Name 
+            <div>
+                <InputText class="form-control input-required" @bind-Value="userVM.FirstName"></InputText>
+            </div>
+        </label>
+        <div class="validation-message">
+            <ValidationMessage For="(() => userVM.FirstName)"></ValidationMessage>
+        </div>
+
+        <label>
+            EmailAdress
+            <div>
+                <InputText class="form-control input-required" @bind-Value="userVM.EmailAdress" @onfocus="() => {userVM.ErrerMessageEmailUniq = null;}"></InputText>
+            </div>
+        </label>
+        <div class="validation-message">
+            <span style="color: red">@userVM.ErrerMessageEmailUniq</span>
+            <ValidationMessage For="(() => userVM.EmailAdress)"></ValidationMessage>
+        </div>
+
+        @*Поля Даты рождения*@
+        <div style="display:flex;">
+            <label>
+                DD
+                <div>
+                    <InputNumber class="form-control" style="width:35%;  border-radius: 5px;" maxlength="2" @bind-Value="BirthdayValidation.Day"></InputNumber>
+                </div>
+            </label>
+
+            <label>
+                <div>
+                    MM
+                    <InputNumber class="form-control" style="width:35%;  border-radius: 5px;" maxlength="2" @bind-Value="BirthdayValidation.Month"></InputNumber>
+                </div>
+            </label>
+
+            <label>
+                <div>
+                    YY
+                    <InputNumber class="form-control" style="width:55%;  border-radius: 5px;" maxlength="4" @bind-Value="BirthdayValidation.Year"> </InputNumber>
+                </div>
+            </label>
+        </div>
+        <div class="validation-message">
+            <ValidationMessage For="(() => BirthdayValidation.Day)"></ValidationMessage>
+            <ValidationMessage For="(() => BirthdayValidation.Month)"></ValidationMessage>
+            <ValidationMessage For="(() => BirthdayValidation.Year)"></ValidationMessage>
+
+            @*проверка на переход граници по годам*@
+            @if (BirthdayValidation.Year > DateTime.Now.Year - 18 || BirthdayValidation.Year < 1900)
+            {
+                //Вызываю метод для выбора и инициализации ошибки
+                BirthdayValidation.ValidationModel(NumberErrorMassege.ErrorExceedingRangeYears);
+                //Рендеренг сообщения об ошибки
+                <div style="color: red">@BirthdayValidation.ErrorMessage</div>
+            }
+
+            @*проверка на отрицательный день*@
+            @if (BirthdayValidation.Day < 1)
+            {
+                BirthdayValidation.ValidationModel(NumberErrorMassege.ErrorNegativeDay);
+                <div style="color: red">@BirthdayValidation.ErrorMessage</div>
+            }
+            @*ПРоверка на количество дней в месяце*@
+            else if (BirthdayValidation.Month == null && BirthdayValidation.Year == null && BirthdayValidation.Day > DateTime.DaysInMonth(2000, 1))
+            {
+                BirthdayValidation.ValidationModel(NumberErrorMassege.ErrorExceedingRangeDays);
+                <div style="color: red">@BirthdayValidation.ErrorMessage</div>
+            }
+            else if (BirthdayValidation.Month > 0 && BirthdayValidation.Month <= 0 && BirthdayValidation.Year == null && BirthdayValidation.Day > DateTime.DaysInMonth(2000, (short)BirthdayValidation.Month))
+            {
+                BirthdayValidation.ValidationModel(NumberErrorMassege.ErrorIfMonthFieldNotNull);
+                <div style="color: red">@BirthdayValidation.ErrorMessage</div>
+            }
+            else if (BirthdayValidation.Month == null && BirthdayValidation.Year >= 1933 && BirthdayValidation.Day > DateTime.DaysInMonth((short)BirthdayValidation.Year, 1))
+            {
+                BirthdayValidation.ValidationModel(NumberErrorMassege.ErrorIfYearFieldNotNull);
+                <div style="color: red">@BirthdayValidation.ErrorMessage</div>
+            }
+            else if (BirthdayValidation.Month > 0 && BirthdayValidation.Month <= 0 && BirthdayValidation.Year >= 1933 && BirthdayValidation.Day > DateTime.DaysInMonth((short)BirthdayValidation.Year, (short)BirthdayValidation.Month))
+            {
+                BirthdayValidation.ValidationModel(NumberErrorMassege.ErrorIfAllFieldNotNull);
+                <div style="color: red">@BirthdayValidation.ErrorMessage</div>
+            }
+            @*Валидация возраста*@
+            else if (BirthdayValidation.Month > 0 && BirthdayValidation.Month <= 12 && BirthdayValidation.Year >= 1933 && BirthdayValidation.Year <= (DateTime.Now.Year - 18) && BirthdayValidation.Day > 0 && BirthdayValidation.Day <= DateTime.DaysInMonth((short)BirthdayValidation.Year, (short)BirthdayValidation.Month))
+            {
+                userVM.Age = BirthdayValidation.Foo();
+            }
+
+            <ValidationMessage For="(() => userVM.Age)"></ValidationMessage>
+        </div>
+
+        <label>
+            Telephone
+            <div>
+                <InputNumber class="form-control input-required" @bind-Value="userVM.Telephone"></InputNumber>
+            </div>
+        </label>
+        <div class="validation-message">
+            <ValidationMessage For="(() => userVM.Telephone)"></ValidationMessage>
+        </div>
+
+        <label>
+            Password
+            <div>
+                <InputText type="password input-required" placeholder="Password" class="form-control input-required" @bind-Value="userVM.Password"></InputText>
+            </div>
+        </label>
+        <div class="validation-message">
+            <ValidationMessage For="(() => userVM.Password)"></ValidationMessage>
+        </div>
+
+        <label>
+            ConfirmPassword
+            <div>
+                <InputText type="password input-required" placeholder="Password" class="form-control" @bind-Value="userVM.ConfirmPassword"></InputText>
+            </div>
+        </label>
+        <div class="validation-message">
+            <ValidationMessage For="(() => userVM.ConfirmPassword)"></ValidationMessage>
+        </div>
+
+        <label>
+            Сountry
+            <div>
+                <InputText class="form-control input-required" @bind-Value="userVM.Сountry"></InputText>
+            </div>
+        </label>
+        <div class="validation-message">
+            <ValidationMessage For="(() => userVM.Сountry)"></ValidationMessage>
+        </div>
+
+        <label>
+            City
+            <div>
+                <InputText class="form-control input-required" @bind-Value="userVM.City"></InputText>
+            </div>
+        </label>
+        <div class="validation-message">
+            <ValidationMessage For="(() => userVM.City)"></ValidationMessage>
+        </div>
+
+        @*Радио Кнопка*@
+        <label>
+            Gender
+        </label>
+        <div>
+            <InputRadioGroup class="form-control input-required" @bind-Value="userVM.Gender">
+                <InputRadio Value=@("Man") /><span>Man</span>
+                <InputRadio Value=@("Woman") /><span>Woman</span>
+            </InputRadioGroup>
+        </div>
+        <div class="validation-message">
+            <ValidationMessage For="(() => userVM.Gender)"></ValidationMessage>
+        </div>
+
+        @*ПЕРВЫЙ СЛОЙ ФОТО*@
+        <div class="img-container">
+            <div class="img-flex-container">
+                <div class="img-frame">
+                    PHOTO
+                    @*Рендоринг фото  если его небыло*@
+                    @if (userVM.imageBase64[0] is not null)
+                    {
+                        <img src="data:image/jpeg;base64,@userVM.imageBase64[0]" class="img" />
+                        userVM.PhotoName = "Photo";
+                    }
+                    else
+                    {
+                        userVM.PhotoName = null;
+                    }
+                    <InputFile class="img input-block" accept=".jpeg,.jpg,.png" OnChange="@((p) => ImageVerificationAsync(p, 0))" />
+                    @*дно + удаление *@
+                    <div class="img-bottom">
+                        @if (userVM.imageBase64[0] is not null)
+                        {
+                            <img class="img-delete" src="/Images/Delete.png" @onclick="@(() => {userVM.imageBase64[0] = null;})" />
+                        }
+                    </div>
+                </div>
+                <div class="img-frame">
+                    PHOTO
+                    @if (userVM.imageBase64[1] is not null)
+                    {
+                        <img src="data:image/jpeg;base64,@userVM.imageBase64[1] " class="img" />
+                        userVM.PhotoName = "Photo";
+                    }
+                    <InputFile class="img input-block" accept=".jpeg,.jpg,.png" OnChange="@((p) => ImageVerificationAsync(p, 1))" />
+                    <div class="img-bottom">
+                        @if (userVM.imageBase64[1] is not null)
+                        {
+                            <img class="img-delete" src="/Images/Delete.png" @onclick="@(() => {userVM.imageBase64[1] = null;})" />
+                        }
+                    </div>
+                </div>
+                <div class="img-frame">
+                    PHOTO
+                    @if (userVM.imageBase64[2] is not null)
+                    {
+                        <img src="data:image/jpeg;base64,@userVM.imageBase64[2]" class="img" />
+                        userVM.PhotoName = "Photo";
+                    }
+                    <InputFile class="img input-block" accept=".jpeg,.jpg,.png" OnChange="@((p) => ImageVerificationAsync(p, 2))" />
+                    <div class="img-bottom">
+                        @if (userVM.imageBase64[2] is not null)
+                        {
+                            <img class="img-delete" src="/Images/Delete.png" @onclick="@(() => {userVM.imageBase64[2] = null;})" />
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br />
+
+        @*ВТОРОЙ СЛОЙ ФОТО*@
+        <div class="img-container">
+            <div class="img-flex-container">
+                <div class="img-frame">
+                    PHOTO
+                    @*Рендоринг фото  если его небыло*@
+                    @if (userVM.imageBase64[3] is not null)
+                    {
+                        <img src="data:image/jpeg;base64,@userVM.imageBase64[3]" class="img" />
+                        userVM.PhotoName = "Photo";
+                    }
+                    <InputFile class="img input-block" accept=".jpeg,.jpg,.png" OnChange="@((p) => ImageVerificationAsync(p, 3))" />
+                    @*дно + удаление *@
+                    <div class="img-bottom">
+                        @if (userVM.imageBase64[3] is not null)
+                        {
+                            <img class="img-delete" src="/Images/Delete.png" @onclick="@(() => {userVM.imageBase64[3] = null;})" />
+                        }
+                    </div>
+                </div>
+                <div class="img-frame">
+                    PHOTO
+                    @if (userVM.imageBase64[4] is not null)
+                    {
+                        <img src="data:image/jpeg;base64,@userVM.imageBase64[4]" class="img" />
+                        userVM.PhotoName = "Photo";
+                    }
+                    <InputFile class="img input-block" accept=".jpeg,.jpg,.png" OnChange="@((p) => ImageVerificationAsync(p, 4))" />
+                    <div class="img-bottom">
+                        @if (userVM.imageBase64[4] is not null)
+                        {
+                            <img class="img-delete" src="/Images/Delete.png" @onclick="@(() => {userVM.imageBase64[4] = null;})" />
+                        }
+                    </div>
+                </div>
+                <div class="img-frame">
+                    PHOTO
+                    @if (userVM.imageBase64[5] is not null)
+                    {
+                        <img src="data:image/jpeg;base64,@userVM.imageBase64[5]" class="img" />
+                        userVM.PhotoName = "Photo";
+                    }
+                    <InputFile class="img input-block" accept=".jpeg,.jpg,.png" OnChange="@((p) => ImageVerificationAsync(p, 5))" />
+
+                    <div class="img-bottom">
+                        @if (userVM.imageBase64[5] is not null)
+                        {
+                            <img class="img-delete" src="/Images/Delete.png" @onclick="@(() => {userVM.imageBase64[5] = null;})" />
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        @*ВАЛИДАЦИЯ ФОТО*@
+        <div class="validation-message">
+            @*валидация на нужный формат*@
+            @userVM.ErrerMessage[0]
+            @userVM.ErrerMessage[1]
+            @userVM.ErrerMessage[2]
+            @userVM.ErrerMessage[3]
+            @userVM.ErrerMessage[4]
+            @userVM.ErrerMessage[5]
+            @* валидация на присутсвие фото*@
+            <ValidationMessage For="(() => userVM.PhotoName)"></ValidationMessage>
+        </div>
+
+        <label>
+            Height
+            <div>
+                <InputNumber class="form-control input-required" @bind-Value="userVM.Height"></InputNumber>
+            </div>
+        </label>
+
+        <br />
+        <label>
+            Weight
+            <div>
+                <InputNumber class="form-control input-required" @bind-Value="userVM.Weight"></InputNumber>
+            </div>
+        </label>
+
+        <br />
+        <label>
+            Language
+            <div>
+                <InputText class="form-control input-required" @bind-Value="userVM.Language"></InputText>
+            </div>
+        </label>
+        <br />
+
+        <label>
+            Interests
+            <div>
+                <InputTextArea class="form-control textarea" @bind-Value="userVM.Interests"></InputTextArea>
+            </div>
+        </label>
+
+        <br />
+        <label>
+            AboutMe
+            <div>
+                <InputTextArea class="form-control textarea" @bind-Value="userVM.AboutMe"></InputTextArea>
+            </div>
+        </label>
+        <br />
+        @if (!Switches.SwitchGlobalXXX)
+        {
+            <button class="accept-btn font-size-accept-btn" type="submit" style="bottom:0;">Accept</button>           
+        }
+        else
+        {
+            <button class="accept-btn font-size-accept-btn" type="submit">Accept</button>
+         @*   <div class="accept-btn font-size-accept-btn option-btn" @onclick="Logout"> Logout</div>*@
+            <div class="accept-btn font-size-accept-btn logout-btn" @onclick="Logout"> Logout</div>
+        }
+    </EditForm>
+</div>
+
+@code {
+    private UserVM userVM = new();
+    private UserVM newUserVM;
+    private LoginVM data;
+    private string CSS { get; set; } = "padding-bottom:10%;";
+
+    protected override async void OnInitialized()
+    {
+        //Получаю файлик с айнтефикацией
+        data = new AddJsonIdentity().DeserializeJsonFileAsync<LoginVM>();
+        if (data is not null)
+        {
+            //инициализирую VM
+            var user = await HttpClientService.GetJSONAsync<UserVM>(AddOrUpdateUser.Controller, AddOrUpdateUser.GetUserForUpdate, data.Id.ToString());
+            userVM = user.Item1;
+            //инициализирую  дату рождения
+            BirthdayValidation.Day = (short)userVM.DateOfBirth.Day;
+            BirthdayValidation.Month = (short)userVM.DateOfBirth.Month;
+            BirthdayValidation.Year = (short)userVM.DateOfBirth.Year;
+
+            //Клонирую данные для проверки изменений
+            var json = JsonSerializer.Serialize(userVM);
+            newUserVM = JsonSerializer.Deserialize<UserVM>(json); ;
+
+            //Меняю высоту от низа экрана
+            CSS = "padding-bottom:25%;";
+            await InvokeAsync(StateHasChanged);
+        }
+    }
+
+    //Method; Сохранение в базу пользователя
+    private async void SelestModeAsync()
+    {
+        if (newUserVM is null)
+            await AddUser();    //Создание пользователя 
+        else
+            await UpdateUser(); //Редактирование пользователя       
+    }
+
+    //Method: ADD User
+    private async Task AddUser()
+    {        
+        userVM.DateOfBirth = BirthdayValidation.DateOfBirth; //Инициализация даты рождения
+
+        var response = await HttpClientService.PostJsonGetStringAsync(userVM, AddOrUpdateUser.Controller, AddOrUpdateUser.AddUser); //Post на сервер для сохранения пользователя
+
+        if (response is "Bad") //проверка на уникальность почты
+        {            
+            userVM.ErrerMessageEmailUniq = "This mail already exists."; //Вывожу ошибку о существующей почьте
+            InvokeAsync(StateHasChanged);
+        }
+        else
+        {           
+            CreateJsonIdentity(response); //Создаю файлик JSON для автоаунтефикации
+
+            Switches.SwitchLoad = true;  //Окрываю загрузочную картинку           
+            Switches.SwitchAccount = false; //выключаю update component           
+            Switches.SwitchXXX = true; //Врубаю кубик
+
+            NavigationManager.NavigateTo("/", true);
+        }        
+    }
+
+    //Method: Апдейт
+    private async Task UpdateUser()
+    {
+        //Дессиарелизую для получение строки
+        string currentUser = JsonSerializer.Serialize(userVM);
+        string pastUser = JsonSerializer.Serialize(newUserVM);
+
+        //Сравниваю были ли какие либо изменения
+        if (!currentUser.Equals(pastUser))
+            if (userVM.Gender == newUserVM.Gender)
+            {
+                var response = await HttpClientService.PostJsonGetStringAsync(userVM, AddOrUpdateUser.Controller, AddOrUpdateUser.UpdateUser);
+                if (response != "Bad")
+                {
+                    userVM.Success = "Success!";
+                    CreateJsonIdentity(userVM.Id.ToString());  //Создаю файлик JSON для автоаунтефикации
+                }
+                else
+                {
+                    userVM.ErrerMessageEmailUniq = "This mail already exists.";
+                    InvokeAsync(StateHasChanged);
+                }
+            }
+            else
+            {
+                var response = await HttpClientService.PostJsonGetStringAsync(userVM, AddOrUpdateUser.Controller, AddOrUpdateUser.MoveUser);
+                if (response != "Bad")
+                {
+                    CreateJsonIdentity(userVM.Id.ToString());
+
+                    Switches.SwitchLoad = true; //Окрываю загрузочную картинку
+                    Switches.SwitchAccount = false; //выключаю update component
+                    Switches.SwitchXXX = true;  //Врубаю кубик
+
+                    NavigationManager.NavigateTo("/", true);
+                }
+                else
+                {
+                    userVM.ErrerMessageEmailUniq = "This mail already exists.";
+                    InvokeAsync(StateHasChanged);
+                }
+            }
+    }
+
+    //Method: Создаю файлик для автоаунтефикации
+    private void CreateJsonIdentity(string id)
+    {
+        LoginVM data = new() { Id = id , Email = userVM.EmailAdress, Gender = userVM.Gender};       
+        Task.Run(() => new AddJsonIdentity().SerializeJsonFile(data));
+    }
+
+    //Метод проверки формата  фото и вывода на экран для просмотра
+    private async void ImageVerificationAsync(InputFileChangeEventArgs file, byte numberPhoto)
+    {                      
+        userVM.ext[numberPhoto] = "." + file.File.ContentType.ToLower().Substring(6);  //получаем расширение файла
+
+        if (userVM.ext[numberPhoto] != ".jpg" && userVM.ext[numberPhoto] != ".jpeg" && userVM.ext[numberPhoto]  //Проверяем расширение файла
+        != ".pjpeg" && userVM.ext[numberPhoto] != ".gif" && userVM.ext[numberPhoto] != ".x-png" && userVM.ext[numberPhoto] != ".png")
+        {
+            userVM.ErrerMessage[numberPhoto] = $"The image № {numberPhoto + 1} was not uploaded - wrong image extension!";            
+            userVM.imageBase64[numberPhoto] = null; //Обнуляю фаил
+        }
+        else
+        {
+            if (!string.IsNullOrEmpty(userVM.ErrerMessage[numberPhoto]))
+                userVM.ErrerMessage[numberPhoto] = null;
+
+            using (MemoryStream ms = new MemoryStream(4 * 1024))      //Записываю фото в пямять стрим для выввода на экран
+            {              
+                var size = file.File.Size;   //Размер файла
+
+                byte[] byteImg = default;
+                await file.File.OpenReadStream(size + 128).CopyToAsync(ms);  //тут фаил не летит целиком  Открываються одновременно 2 потока поэтому и нужно ждать осинхронно
+
+                if (size > 100000) //Уменьшаю вес фото
+                {
+                    using (MemoryStream ms2 = new MemoryStream(4 * 1024))
+                    {
+                        var original = Image.FromStream(ms);
+                        original.Save(ms2, ImageFormat.Jpeg);
+                        byteImg = ms2.ToArray();
+                        //Сохранение в фаил
+                        //original.Save(@"E:\Avatar.jpg", ImageFormat.Jpeg);
+                    }
+                }
+                else
+                    byteImg = ms.ToArray();
+
+                userVM.imageBase64[numberPhoto] = Convert.ToBase64String(byteImg);   //конвертирую байты в строку для вывода на html               
+            }
+        }
+        InvokeAsync(StateHasChanged);
+    }
+
+    //Method: Lodout
+    private async Task Logout()
+    {
+        new AddJsonIdentity().DeleteFileIndentiy();              
+        Switches.SwitchGlobalXXX = false; //off nav menu
+        Switches.SwitchAccount = false; //выключаю update component
+        Switches.SwitchLoad = true; //Окрываю загрузочную картинку
+        Switches.SwitchXXX = true;  //Врубаю кубик
+
+        NavigationManager.NavigateTo("/", true);
+    }
+}

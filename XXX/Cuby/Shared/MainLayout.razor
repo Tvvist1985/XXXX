@@ -1,0 +1,17 @@
+﻿@inherits LayoutComponentBase
+
+<main>              
+    <CascadingValue Value="LayoutAfterRender">
+        <article> @Body</article>
+    </CascadingValue>
+              
+    @if (Switches.SwitchGlobalXXX)
+    {
+        <NavMenu></NavMenu>
+    }
+</main>
+@code{
+   
+    //Метод для отрисовки меню через аvтерендеринг неполучаться
+    private void LayoutAfterRender() => InvokeAsync(StateHasChanged);      
+}

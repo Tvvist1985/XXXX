@@ -1,0 +1,182 @@
+﻿
+:root {
+    --width: 50%;
+}
+/*общий фон*/
+body {
+    background-image: linear-gradient(90deg, cyan, dodgerblue);
+}
+
+/*контейнер(сцена) для куба + граници для (костыль из за отсутствия событий) */
+.cube-container {
+    width: 60%;
+    height: 68vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    perspective: calc((100vw / 10) * 13);
+    perspective-origin: center;
+}
+
+/*класс карказ куба*/
+.cuby {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+}
+
+/*Сторона куба*/
+.cuby-side {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 1px solid white;
+    transform: rotateY(calc(90deg * var(--i))) translateZ(calc(59.8vw / 2));
+    background: linear-gradient(#ffffff,#131011 );
+    text-align: center;
+}
+
+.cuby-image-size {
+    width: 80%;
+    height: 90%;
+    border-radius: 0.5vw;
+}
+
+/*контейнер для нижней части куба*/
+.cuby-bottom-box {
+    display: flex;
+    height: 10%;
+    align-items: center;
+}
+
+.cube-name-age-box {
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+}
+
+.cuby-bottom-size > div {
+    font-size: calc(65vw / 16);
+    color: #d3d3d3;
+}
+
+
+/*кнопки на кубике*/
+.chat-btn, .search-btn {
+    width: 10%;
+    border-radius: 5px;
+}
+
+.chat-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    /* transform: rotate(90deg);*/
+    animation: color-change-cuby-chat 5s infinite alternate;
+    font-size: calc(65vw / 18.5);
+}
+
+@keyframes color-change-cuby-chat {
+    0% {
+        color: #39b702;
+    }
+
+    50% {
+        color: #680176;
+    }
+
+    100% {
+        color: #d70000;
+    }
+}
+
+.search-btn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: color-change-cuby-search 5s infinite alternate;
+    font-size: calc(65vw / 19.5);
+}
+
+@keyframes color-change-cuby-search {
+    0% {
+        color: #d70000;
+    }
+
+    50% {
+        color: #680176;
+    }
+
+    100% {
+        color: #39b702;
+    }
+}
+
+/*///////////////////////////////////////////////////////////////////*/
+/*ПУЛЬТ*/
+
+.cuby-btn-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 8vw;
+    margin-top: 15%;
+}
+
+.layer2 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: calc(100vh - (100vw * 1.07));
+}
+/*Ползунки*/
+.range {
+    position: absolute;
+    width: 60%;   
+}
+
+/*Arrows*/
+.triangle-left, .triangle-right {
+    border-top: 6vw solid transparent;
+    border-bottom: 6vw solid transparent;
+}
+
+.triangle-left {
+    border-right: 12vw solid #6E18C0;
+}
+
+.triangle-right {
+    border-left: 12vw solid #6E18C0;
+}
+
+/*стрелки для просмотра фото*/
+.triangle-min {
+    border-top: 3.2vw solid transparent;
+    border-bottom: 3.2vw solid transparent;
+    flex-basis: 10%;
+}
+
+/*........................................*/
+
+
+/*//////////////////////////////////////////*/
+/*CHAT button*/
+.cuby-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30%;
+    width: 40%;
+    border-radius: 10px;
+    margin-top: 10%;
+    background-color: #c4344b;
+    color: aliceblue;
+}

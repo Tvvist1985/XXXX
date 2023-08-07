@@ -1,0 +1,149 @@
+﻿@using Microsoft.AspNetCore.SignalR.Client;
+@using Services.ChatService;
+@using System.Text.Json;
+@inject IJSRuntime JS
+@inject IChatClient Chat
+@implements IDisposable
+
+<style>
+
+    .chat-box { /* высота в переменной*/
+        position: fixed;
+        width: 100%;
+        bottom: calc((100vw / 10) * 2.2);
+        overflow-y: auto;
+        background-color: azure;
+    }
+    /* improved for chat text box */
+    textarea {
+        border: 1px dashed #888;
+        border-radius: 5px;
+        width: 80%;
+        height: 100%;
+        overflow: auto;
+        background: #f7f7f7;
+        resize: none;
+        display: block;
+        font-size: calc(100vw / 35);
+    }
+
+    /* improved for speech bubbles */
+    .received, .sent {
+        width: 90%;
+        font-family: arial;
+        font-size: calc(100vw / 35);
+        border-radius: 10px;
+        padding: calc(100vw / 20);
+        margin-bottom: calc((100vw / 10) * 0.5);
+    }
+
+    .sent {
+        background: #03a9f4;
+        color: #fff;
+        margin-left: 10%;
+        top: 50%;
+        text-align: right;
+    }
+
+    .received {
+        background: #4CAF50;
+        color: #fff;
+        margin-left: 10px;
+        margin-right: 10%;
+    }
+
+    .send-box {
+        position: fixed;
+        bottom: calc((100vw / 10) * 1.6);
+        width: 100%;
+        height: 6vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: azure;
+    }
+
+    .close-btn {
+        position: fixed;
+        top: 0%;
+        right: 40%;
+        width: 20%;
+        height: 6vw;
+        background-color: crimson;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        font-size: calc(100vw / 25);
+        text-align: center;
+    }
+</style>
+
+
+<div id="scroll" class="chat-box" style="@HeightChat">
+    @*Close*@
+    <div class="close-btn" style="@CloseChat" @onclick="() => { Switches.ButtomCloseChat(); EventCallback.InvokeAsync();}">Close </div>
+
+    @*// Error messages*@
+    @if (Chat._message != null)
+    {
+        <div class="invalid-feedback">@Chat._message</div>
+        <small id="emailHelp" class="form-text text-muted">@Chat._message</small>
+    }
+
+    @foreach (var item in Chat._messages)
+    {
+        @if (item.IsNotice)
+        {
+            <div class="alert alert-info">@item.Body</div>
+        }
+        else if (item.Username == Chat.DataForXXX.ApponentDataJson.Id.ToString()) //Если имя совпадает и смене текущего пользователя
+        {
+            <div class="sent">
+                <div>@item.Body</div>
+            </div>
+        }
+        else
+        {
+            <div class="received">
+                <div>@item.Body</div>
+            </div>
+        }
+    }       
+</div>
+
+<div class="send-box">
+    <textarea rows="1" @bind="@Chat._newMessage"></textarea>
+    <div style="font-size: calc(100vw / 35);  width:15%; height: 100%;" @onclick="Chat.SendMessage">Send</div>
+</div>
+
+
+@code{
+    [Parameter] public string HeightChat { get; set; } = "height: calc(100vh - ((100vw / 10) * 2.2));";
+    [Parameter] public string CloseChat { get; set; } = default;
+    [Parameter] public MainDataJson User { get; set; }      
+    [Parameter] public EventCallback EventCallback { get; set; }
+   
+
+    //Method:инициализирую чат
+    protected async override void OnInitialized()
+    {
+        if (Chat.OnChat) Chat.OnChatCrutch = true; //Костыль для изменения данных чата                 
+        Chat.EnterChat(User.Chat?.ChatMessages, User.Id.ToString()); // вхожу в чат и получаю тукущий чат
+
+        JS.InvokeVoidAsync("loadMessageScroll"); //Скрипт для прокрутки чата в низ
+        InvokeAsync(StateHasChanged);        
+    }
+
+    //Method: Автопрокрутка скролла вниз через JS
+    protected async override void OnAfterRender(bool first) => 
+      JS.InvokeVoidAsync("lastMessageScroll"); //Скрипт для прокрутки сообщения вниз 
+
+    //Method: закрываю чат
+    public void Dispose()
+    {        
+        Chat.OutChat();
+        GC.SuppressFinalize(this);
+    }
+}
+
+
+

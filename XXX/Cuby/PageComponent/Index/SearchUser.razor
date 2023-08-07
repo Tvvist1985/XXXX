@@ -1,0 +1,86 @@
+﻿@using Models.JsonTpansportModel;
+@inject IHttpClientService IHttpClientService
+@inject NavigationManager NavigationManager
+
+<div style="padding-bottom:30%;">
+    <EditForm Model="AponentVM" OnSubmit="FindUsers">
+        <DataAnnotationsValidator></DataAnnotationsValidator>
+        <div style="display: flex;">
+            <label>
+                Initial
+                <div>
+                    <InputNumber class="form-control" style="width:35%;  border-radius: 5px;" @bind-Value="AponentVM.InitialAge"></InputNumber>
+                </div>
+            </label>
+
+            <label>
+                Final
+                <div>
+                    <InputNumber class="form-control" style="width:35%;  border-radius: 5px;" @bind-Value="AponentVM.FinalAge"></InputNumber>
+                </div>
+            </label>
+        </div>
+        @*Сообщени об ошибках*@
+        <div class="validation-message">
+            <ValidationMessage For="(() => AponentVM.InitialAge)"></ValidationMessage>
+            <ValidationMessage For="(() => AponentVM.FinalAge)"></ValidationMessage>
+        </div>
+
+        <label>
+            City
+            <div>
+                <InputText class=" form-control input-required" @bind-Value="AponentVM.City"></InputText>
+            </div>
+        </label>
+        <div class="validation-message">
+            <ValidationMessage For="(() => AponentVM.City)"></ValidationMessage>
+        </div>
+
+        <label>
+            Сountry
+            <div>
+                <InputText class=" form-control input-required" @bind-Value="AponentVM.Сountry"></InputText>
+            </div>
+        </label>
+        <div class="validation-message">
+            <ValidationMessage For="(() => AponentVM.Сountry)"></ValidationMessage>
+        </div>
+
+        <div class="form-group">
+            <div>
+                <label>
+                    <InputCheckbox @bind-Value="AponentVM.Man"></InputCheckbox> Men
+                </label>
+
+                <label>
+                    <InputCheckbox @bind-Value="AponentVM.Woman"></InputCheckbox> Woman
+                </label>
+            </div>
+        </div>
+
+        <button class="accept-btn font-size-accept-btn" type="submit">Accept</button>
+    </EditForm>
+</div>
+
+@code
+{      
+    [Parameter] public ICubyCollection Collection { get; set; }
+
+    private AponentJson AponentVM { get; set; } 
+
+    //Method: Получаю данные предыдущего поиска
+    protected async override Task OnInitializedAsync() =>     
+        AponentVM = Collection.DataForXXX.ApponentDataJson;           
+
+    //Method: Получаю данные из формы и записываю в базу и в куки
+    private async void FindUsers()
+    {
+        await IHttpClientService.PostJsonGetStringAsync<AponentJson>(AponentVM, AboutUsers.Controller, AboutUsers.ReinstallSearch);
+
+        //Окрываю загрузочную картинку
+        Switches.SwitchLoad = true;
+        //переключаю свичи
+        Switches.SelectMethodForSwitch(1);
+        NavigationManager.NavigateTo("/", true);
+    }   
+}

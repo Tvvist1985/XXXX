@@ -1,0 +1,54 @@
+﻿@inject IHttpClientService HttpClientService
+@inject NavigationManager NavigationManager
+
+<div class="login-conhtainer" >  
+    <EditForm Model="LoginVM" OnSubmit="Login" class="text-center">
+        <label>
+            Email.
+            <div>
+                <InputText style="width:100%" @bind-Value="LoginVM.Email" @onfocus="() => {LoginVM.ErrorMessageMailChld = null;}" />
+                <div class="validation-message">@LoginVM.ErrorMessageMailChld</div>
+            </div>
+        </label>
+        
+        <label>
+            Password.
+            <div>
+                <InputText style="width:100%" type="password" @bind-Value="LoginVM.Password" @onfocus="() => {LoginVM.ErrorMessagePasswordChld = null;}" />
+                <div class="validation-message">@LoginVM.ErrorMessagePasswordChld</div>
+            </div>
+        </label>
+     
+        <button class="font-size-accept-btn load-btn " type="submit">Login</button>
+    </EditForm>
+
+    <div class="text-center">
+        <NavLink style="text-decoration: none; color: red;" href="#" @onclick="() => {Switches.SwitchAccount = true; Switches.SwitchXXX = false;}">Create Account. </NavLink>
+    </div>
+        
+</div>
+
+@code
+{
+    private LoginVM LoginVM { get; set; } = new();
+
+    //Method: Ауитефикация + создания куки + проверка на наличае пользователя
+    private async void Login()
+    {
+        var result = await HttpClientService.GetJSONAsync<LoginVM>(AboutUsers.Controller, AboutUsers.IdentityUser, LoginVM.Email, LoginVM.Password);
+
+        if (result.Item2 == "User not found.")//Проверка результатов
+            LoginVM.ErrorMessageMailChld = "User not found.";
+        else if (result.Item2 == "Invalid User Password.")
+            LoginVM.ErrorMessagePasswordChld = "Invalid User Password.";
+        else 
+        {           
+            new AddJsonIdentity().SerializeJsonFile(result.Item1);//Создаю файлик для автоаунтефикации
+
+            Switches.SwitchLoad = true;  // on load page.
+            NavigationManager.NavigateTo("/", true);
+        }        
+    }       
+}
+
+

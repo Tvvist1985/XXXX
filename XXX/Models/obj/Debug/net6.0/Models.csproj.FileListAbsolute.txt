@@ -1,0 +1,120 @@
+C:\Users\Twist\Desktop\Cuby\Models\bin\Debug\net6.0\Models.deps.json
+C:\Users\Twist\Desktop\Cuby\Models\bin\Debug\net6.0\Models.dll
+C:\Users\Twist\Desktop\Cuby\Models\bin\Debug\net6.0\Models.pdb
+C:\Users\Twist\Desktop\Cuby\Models\obj\Debug\net6.0\Models.csproj.AssemblyReference.cache
+C:\Users\Twist\Desktop\Cuby\Models\obj\Debug\net6.0\Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Twist\Desktop\Cuby\Models\obj\Debug\net6.0\Models.AssemblyInfoInputs.cache
+C:\Users\Twist\Desktop\Cuby\Models\obj\Debug\net6.0\Models.AssemblyInfo.cs
+C:\Users\Twist\Desktop\Cuby\Models\obj\Debug\net6.0\Models.csproj.CoreCompileInputs.cache
+C:\Users\Twist\Desktop\Cuby\Models\obj\Debug\net6.0\Models.dll
+C:\Users\Twist\Desktop\Cuby\Models\obj\Debug\net6.0\refint\Models.dll
+C:\Users\Twist\Desktop\Cuby\Models\obj\Debug\net6.0\Models.pdb
+C:\Users\Twist\Desktop\Cuby\Models\obj\Debug\net6.0\ref\Models.dll
+C:\Users\Twist\Desktop\Cuby — копия\Models\bin\Debug\net6.0\Models.deps.json
+C:\Users\Twist\Desktop\Cuby — копия\Models\bin\Debug\net6.0\Models.dll
+C:\Users\Twist\Desktop\Cuby — копия\Models\bin\Debug\net6.0\Models.pdb
+C:\Users\Twist\Desktop\Cuby — копия\Models\obj\Debug\net6.0\Models.csproj.AssemblyReference.cache
+C:\Users\Twist\Desktop\Cuby — копия\Models\obj\Debug\net6.0\Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Twist\Desktop\Cuby — копия\Models\obj\Debug\net6.0\Models.AssemblyInfoInputs.cache
+C:\Users\Twist\Desktop\Cuby — копия\Models\obj\Debug\net6.0\Models.AssemblyInfo.cs
+C:\Users\Twist\Desktop\Cuby — копия\Models\obj\Debug\net6.0\Models.csproj.CoreCompileInputs.cache
+C:\Users\Twist\Desktop\Cuby — копия\Models\obj\Debug\net6.0\Models.dll
+C:\Users\Twist\Desktop\Cuby — копия\Models\obj\Debug\net6.0\refint\Models.dll
+C:\Users\Twist\Desktop\Cuby — копия\Models\obj\Debug\net6.0\Models.pdb
+C:\Users\Twist\Desktop\Cuby — копия\Models\obj\Debug\net6.0\ref\Models.dll
+C:\Users\Twist\Desktop\Cuby — копия — копия\Models\bin\Debug\net6.0\Models.deps.json
+C:\Users\Twist\Desktop\Cuby — копия — копия\Models\bin\Debug\net6.0\Models.dll
+C:\Users\Twist\Desktop\Cuby — копия — копия\Models\bin\Debug\net6.0\Models.pdb
+C:\Users\Twist\Desktop\Cuby — копия — копия\Models\obj\Debug\net6.0\Models.csproj.AssemblyReference.cache
+C:\Users\Twist\Desktop\Cuby — копия — копия\Models\obj\Debug\net6.0\Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Twist\Desktop\Cuby — копия — копия\Models\obj\Debug\net6.0\Models.AssemblyInfoInputs.cache
+C:\Users\Twist\Desktop\Cuby — копия — копия\Models\obj\Debug\net6.0\Models.AssemblyInfo.cs
+C:\Users\Twist\Desktop\Cuby — копия — копия\Models\obj\Debug\net6.0\Models.csproj.CoreCompileInputs.cache
+C:\Users\Twist\Desktop\Cuby — копия — копия\Models\obj\Debug\net6.0\Models.dll
+C:\Users\Twist\Desktop\Cuby — копия — копия\Models\obj\Debug\net6.0\refint\Models.dll
+C:\Users\Twist\Desktop\Cuby — копия — копия\Models\obj\Debug\net6.0\Models.pdb
+C:\Users\Twist\Desktop\Cuby — копия — копия\Models\obj\Debug\net6.0\ref\Models.dll
+C:\Users\Twist\Desktop\Cuby — копия — копия — копия\Models\bin\Debug\net6.0\Models.deps.json
+C:\Users\Twist\Desktop\Cuby — копия — копия — копия\Models\bin\Debug\net6.0\Models.dll
+C:\Users\Twist\Desktop\Cuby — копия — копия — копия\Models\bin\Debug\net6.0\Models.pdb
+C:\Users\Twist\Desktop\Cuby — копия — копия — копия\Models\obj\Debug\net6.0\Models.csproj.AssemblyReference.cache
+C:\Users\Twist\Desktop\Cuby — копия — копия — копия\Models\obj\Debug\net6.0\Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Twist\Desktop\Cuby — копия — копия — копия\Models\obj\Debug\net6.0\Models.AssemblyInfoInputs.cache
+C:\Users\Twist\Desktop\Cuby — копия — копия — копия\Models\obj\Debug\net6.0\Models.AssemblyInfo.cs
+C:\Users\Twist\Desktop\Cuby — копия — копия — копия\Models\obj\Debug\net6.0\Models.csproj.CoreCompileInputs.cache
+C:\Users\Twist\Desktop\Cuby — копия — копия — копия\Models\obj\Debug\net6.0\Models.dll
+C:\Users\Twist\Desktop\Cuby — копия — копия — копия\Models\obj\Debug\net6.0\refint\Models.dll
+C:\Users\Twist\Desktop\Cuby — копия — копия — копия\Models\obj\Debug\net6.0\Models.pdb
+C:\Users\Twist\Desktop\Cuby — копия — копия — копия\Models\obj\Debug\net6.0\ref\Models.dll
+C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия\Models\bin\Debug\net6.0\Models.deps.json
+C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия\Models\bin\Debug\net6.0\Models.dll
+C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия\Models\bin\Debug\net6.0\Models.pdb
+C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия\Models\obj\Debug\net6.0\Models.csproj.AssemblyReference.cache
+C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия\Models\obj\Debug\net6.0\Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия\Models\obj\Debug\net6.0\Models.AssemblyInfoInputs.cache
+C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия\Models\obj\Debug\net6.0\Models.AssemblyInfo.cs
+C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия\Models\obj\Debug\net6.0\Models.csproj.CoreCompileInputs.cache
+C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия\Models\obj\Debug\net6.0\Models.dll
+C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия\Models\obj\Debug\net6.0\refint\Models.dll
+C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия\Models\obj\Debug\net6.0\Models.pdb
+C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия\Models\obj\Debug\net6.0\ref\Models.dll
+C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия (2)\Models\bin\Debug\net6.0\Models.deps.json
+C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия (2)\Models\bin\Debug\net6.0\Models.dll
+C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия (2)\Models\bin\Debug\net6.0\Models.pdb
+C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия (2)\Models\obj\Debug\net6.0\Models.csproj.AssemblyReference.cache
+C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия (2)\Models\obj\Debug\net6.0\Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия (2)\Models\obj\Debug\net6.0\Models.AssemblyInfoInputs.cache
+C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия (2)\Models\obj\Debug\net6.0\Models.AssemblyInfo.cs
+C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия (2)\Models\obj\Debug\net6.0\Models.csproj.CoreCompileInputs.cache
+C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия (2)\Models\obj\Debug\net6.0\Models.dll
+C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия (2)\Models\obj\Debug\net6.0\refint\Models.dll
+C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия (2)\Models\obj\Debug\net6.0\Models.pdb
+C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия (2)\Models\obj\Debug\net6.0\ref\Models.dll
+C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия (3) — копия\Models\bin\Debug\net6.0\Models.deps.json
+C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия (3) — копия\Models\bin\Debug\net6.0\Models.dll
+C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия (3) — копия\Models\bin\Debug\net6.0\Models.pdb
+C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия (3) — копия\Models\obj\Debug\net6.0\Models.csproj.AssemblyReference.cache
+C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия (3) — копия\Models\obj\Debug\net6.0\Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия (3) — копия\Models\obj\Debug\net6.0\Models.AssemblyInfoInputs.cache
+C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия (3) — копия\Models\obj\Debug\net6.0\Models.AssemblyInfo.cs
+C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия (3) — копия\Models\obj\Debug\net6.0\Models.csproj.CoreCompileInputs.cache
+C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия (3) — копия\Models\obj\Debug\net6.0\Models.dll
+C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия (3) — копия\Models\obj\Debug\net6.0\refint\Models.dll
+C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия (3) — копия\Models\obj\Debug\net6.0\Models.pdb
+C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия (3) — копия\Models\obj\Debug\net6.0\ref\Models.dll
+E:\Cuby — копия — копия — копия — копия — копия (3) — копия\Models\bin\Debug\net6.0\Models.deps.json
+E:\Cuby — копия — копия — копия — копия — копия (3) — копия\Models\bin\Debug\net6.0\Models.dll
+E:\Cuby — копия — копия — копия — копия — копия (3) — копия\Models\bin\Debug\net6.0\Models.pdb
+E:\Cuby — копия — копия — копия — копия — копия (3) — копия\Models\obj\Debug\net6.0\Models.csproj.AssemblyReference.cache
+E:\Cuby — копия — копия — копия — копия — копия (3) — копия\Models\obj\Debug\net6.0\Models.GeneratedMSBuildEditorConfig.editorconfig
+E:\Cuby — копия — копия — копия — копия — копия (3) — копия\Models\obj\Debug\net6.0\Models.AssemblyInfoInputs.cache
+E:\Cuby — копия — копия — копия — копия — копия (3) — копия\Models\obj\Debug\net6.0\Models.AssemblyInfo.cs
+E:\Cuby — копия — копия — копия — копия — копия (3) — копия\Models\obj\Debug\net6.0\Models.csproj.CoreCompileInputs.cache
+E:\Cuby — копия — копия — копия — копия — копия (3) — копия\Models\obj\Debug\net6.0\Models.dll
+E:\Cuby — копия — копия — копия — копия — копия (3) — копия\Models\obj\Debug\net6.0\refint\Models.dll
+E:\Cuby — копия — копия — копия — копия — копия (3) — копия\Models\obj\Debug\net6.0\Models.pdb
+E:\Cuby — копия — копия — копия — копия — копия (3) — копия\Models\obj\Debug\net6.0\ref\Models.dll
+E:\CubyКОПИЯ\Cuby — копия — копия — копия — копия — копия (3) — копия\Models\bin\Debug\net6.0\Models.deps.json
+E:\CubyКОПИЯ\Cuby — копия — копия — копия — копия — копия (3) — копия\Models\bin\Debug\net6.0\Models.dll
+E:\CubyКОПИЯ\Cuby — копия — копия — копия — копия — копия (3) — копия\Models\bin\Debug\net6.0\Models.pdb
+E:\CubyКОПИЯ\Cuby — копия — копия — копия — копия — копия (3) — копия\Models\obj\Debug\net6.0\Models.csproj.AssemblyReference.cache
+E:\CubyКОПИЯ\Cuby — копия — копия — копия — копия — копия (3) — копия\Models\obj\Debug\net6.0\Models.GeneratedMSBuildEditorConfig.editorconfig
+E:\CubyКОПИЯ\Cuby — копия — копия — копия — копия — копия (3) — копия\Models\obj\Debug\net6.0\Models.AssemblyInfoInputs.cache
+E:\CubyКОПИЯ\Cuby — копия — копия — копия — копия — копия (3) — копия\Models\obj\Debug\net6.0\Models.AssemblyInfo.cs
+E:\CubyКОПИЯ\Cuby — копия — копия — копия — копия — копия (3) — копия\Models\obj\Debug\net6.0\Models.csproj.CoreCompileInputs.cache
+E:\CubyКОПИЯ\Cuby — копия — копия — копия — копия — копия (3) — копия\Models\obj\Debug\net6.0\Models.dll
+E:\CubyКОПИЯ\Cuby — копия — копия — копия — копия — копия (3) — копия\Models\obj\Debug\net6.0\refint\Models.dll
+E:\CubyКОПИЯ\Cuby — копия — копия — копия — копия — копия (3) — копия\Models\obj\Debug\net6.0\Models.pdb
+E:\CubyКОПИЯ\Cuby — копия — копия — копия — копия — копия (3) — копия\Models\obj\Debug\net6.0\ref\Models.dll
+C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия (3) — копия — копия — копия\Models\bin\Debug\net6.0\Models.deps.json
+C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия (3) — копия — копия — копия\Models\bin\Debug\net6.0\Models.dll
+C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия (3) — копия — копия — копия\Models\bin\Debug\net6.0\Models.pdb
+C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия (3) — копия — копия — копия\Models\obj\Debug\net6.0\Models.csproj.AssemblyReference.cache
+C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия (3) — копия — копия — копия\Models\obj\Debug\net6.0\Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия (3) — копия — копия — копия\Models\obj\Debug\net6.0\Models.AssemblyInfoInputs.cache
+C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия (3) — копия — копия — копия\Models\obj\Debug\net6.0\Models.AssemblyInfo.cs
+C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия (3) — копия — копия — копия\Models\obj\Debug\net6.0\Models.csproj.CoreCompileInputs.cache
+C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия (3) — копия — копия — копия\Models\obj\Debug\net6.0\Models.dll
+C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия (3) — копия — копия — копия\Models\obj\Debug\net6.0\refint\Models.dll
+C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия (3) — копия — копия — копия\Models\obj\Debug\net6.0\Models.pdb
+C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия (3) — копия — копия — копия\Models\obj\Debug\net6.0\ref\Models.dll

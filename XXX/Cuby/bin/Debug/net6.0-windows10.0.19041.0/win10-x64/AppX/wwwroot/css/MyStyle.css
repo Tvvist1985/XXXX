@@ -1,0 +1,413 @@
+﻿.textarea {
+    resize: none;
+    width: 114.6%;
+    border-radius: 5px;
+}
+
+/*стиль импутов*/
+.input-required {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.qwe {
+    width: 100px;
+    height: 100px;
+    background: aqua;
+    margin: 50px auto 50px;
+    padding: 200px;
+}
+
+.div-container {
+    position: relative;
+    height: 230px;
+    width: 27%;
+    margin: 20px auto;
+    border-radius: 10px;
+    border: 2px solid #000000;
+    background: rgb(198, 157, 206);
+}
+
+/*USER INFO (компонент)*/
+/*Для кнопок*/
+
+.nav-container { /*класс в двух местах*/
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 75%;
+    padding-bottom: 16%;
+}
+
+.container-like-buttom {
+    position: absolute;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-menu {
+    position: absolute;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.my-btn {
+    display: flex;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 20%;
+    height: 94%;
+    background-color: red;
+    border-radius: 50%;
+    color: aliceblue;
+    font-size: 130%;
+    cursor: pointer;
+}
+.btn-layer2 {
+    display: flex;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 20%;
+    height: 10vw;
+    background-color: crimson;
+    border-radius: 10px;
+    color: aliceblue;
+    font-size: 130%;
+    cursor: pointer;
+}
+
+.my-font-size {
+    font-size: calc(100vw / 16);
+}
+
+/*кнопака ACCEPT*/
+
+.accept-btn, .load-btn, .add-btn, .option-btn, .logout-btn {
+    display: flex;
+    left: 37.5%;
+    justify-content: center;
+    align-items: center;
+    background-color: #f18383;
+    width: 25%;
+    height: 8vw;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.load-btn {
+    position: relative;
+    left: 32.5%;
+    width: 35.5%;
+}
+
+.add-btn {
+    position: fixed;
+    bottom: 0;
+}
+
+.accept-btn {
+    position: fixed;
+    bottom: calc((100vw / 10) * 1.6);
+}
+
+.option-btn {
+    left: 0;
+}
+
+.logout-btn {
+    left: 75%;
+}
+
+.font-size-accept-btn {
+    font-size: calc(100vw / 18);
+}
+
+/*ДЛЯ ФОТО */
+.img-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 45%;
+}
+
+.img-flex-container {
+    position: absolute;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.img-frame {
+    position: relative;
+    flex-basis: 30%;
+    height: 100%;
+    background-color: plum;
+    border: solid 2px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 85%;
+    border-radius: 5px 5px 0 0;
+}
+
+.img-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 15%;
+    border-radius: 0 0 5px 5px;
+    background-color: #450943;
+}
+
+.input-block {
+    opacity: 0;
+    cursor: pointer;
+    /*font-size: 0;*/
+}
+
+.img-delete {
+    width: 15%;
+    height: 100%;
+    border-radius: 3px;
+}
+
+/*размер фото для контактов и персоональных данных*/
+.img-contact {
+    display: block;
+    width: 75%;
+    height: 100vw;
+    margin: 0 auto;
+    margin-top: 1vh;
+    border-radius: 10px;
+    border: 2px solid;
+}
+
+/*..................................*/
+
+/*Likes*/
+:root {
+    --w: 0.75;
+}
+
+.heart-like {
+    height: calc(100vw / 10 * var(--w));
+    width: calc(100vw / 10 * var(--w));
+    background: crimson;
+    position: relative;
+    transform: rotate(-45deg);
+    box-shadow: -5px 5px 15px crimson;
+    cursor: pointer;
+}
+
+    .heart-like::before {
+        content: '';
+        position: absolute;
+        height: calc(100vw / 10 * var(--w));
+        width: calc(100vw / 10 * var(--w));
+        background: crimson;
+        top: -50%;
+        border-radius: 15px;
+        box-shadow: -5px -5px 15px crimson;
+    }
+
+    .heart-like::after {
+        content: '';
+        position: absolute;
+        height: calc(100vw / 10 * var(--w));
+        width: calc(100vw / 10 * var(--w));
+        background: crimson;
+        right: -50%;
+        border-radius: 15px;
+        box-shadow: 5px 5px 15px crimson;
+    }
+/*..*/
+.heart-not-like {
+    width: calc(100vw / 10 * var(--w));
+    height: calc(100vw / 10 * var(--w));
+    background: #bf7986;
+    position: relative;
+    transform: rotate(-45deg);
+    box-shadow: -5px 5px 15px #bf7986;
+    cursor: pointer;
+}
+
+    .heart-not-like::before {
+        content: '';
+        position: absolute;
+        width: calc(100vw / 10 * var(--w));
+        height: calc(100vw / 10 * var(--w));
+        background: #bf7986;
+        top: -50%;
+        border-radius: 15px;
+        box-shadow: -5px -5px 15px #bf7986;
+    }
+
+    .heart-not-like::after {
+        content: '';
+        position: absolute;
+        width: calc(100vw / 10 * var(--w));
+        height: calc(100vw / 10 * var(--w));
+        background: #bf7986;
+        right: -50%;
+        border-radius: 15px;
+        box-shadow: 5px 5px 15px #bf7986;
+    }
+
+.heart-double-like {
+    height: calc(100vw / 10 * var(--w));
+    width: calc(100vw / 10 * var(--w));
+    background: crimson;
+    position: relative;
+    transform: rotate(-45deg);
+    box-shadow: -5px 5px 15px crimson;
+    cursor: pointer;
+    animation-name: heart-double;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+    .heart-double-like::before {
+        content: '';
+        position: absolute;
+        height: calc(100vw / 10 * var(--w));
+        width: calc(100vw / 10 * var(--w));
+        background: crimson;
+        top: -50%;
+        border-radius: 15px;
+        box-shadow: -5px -5px 15px crimson;
+        animation-name: heart-double;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+
+    .heart-double-like::after {
+        content: '';
+        position: absolute;
+        height: calc(100vw / 10 * var(--w));
+        width: calc(100vw / 10 * var(--w));
+        background: crimson;
+        right: -50%;
+        border-radius: 15px;
+        box-shadow: 5px 5px 15px crimson;
+        animation-name: heart-double;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+
+@keyframes heart-double {
+    0% {
+        background: crimson;
+    }
+
+    50% {
+        background: #b915a8;
+    }
+
+    100% {
+        background: #af21ca;
+    }
+}
+
+/* //////////////////////////////*/
+
+
+
+/*Line*/
+.hr-washed hr {
+    padding: 0;
+    height: 0;
+    border: 1px solid #333;
+    box-shadow: 0 0 10px 1px black;
+}
+
+/*..............................*/
+.validation-message {
+    width: 100%;
+    height: 3vh;
+    overflow: hidden;
+    font-size: 2vh;
+}
+/*/////////////////////////////////////////////////////////*/
+
+/*Meню Login*/
+.login-conhtainer {
+    position: fixed;
+    left: 15%;
+    bottom: 1px;
+    width: 70%;
+    height: 65vw;
+    border: solid 1px #000000;
+}
+
+/*................................*/
+/*СТРАНИЦА ЗАГРУЗКИ*/
+.loading-page-back {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(45deg, #6610f2, #E94584, #24AADB, #27DBB1, #6610f2, #d63384);
+}
+
+.loadin-text {
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    text-align: center;
+}
+
+.loading-cuby {
+    font-size: calc(100vw / 6);
+    font-family: Arial;
+    color: red;
+    animation: color-change-cuby 5s infinite;
+    text-shadow: 2px 2px 10px deeppink;
+    letter-spacing: 3vw;
+}
+
+@keyframes color-change-cuby {
+    0% {
+        color: blue;
+    }
+
+    50% {
+        color: bisque;
+    }
+
+    100% {
+        color: deeppink;
+    }
+}
+
+/*/////////////////////////////////////////*/
+.Success {
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    color: forestgreen;
+}

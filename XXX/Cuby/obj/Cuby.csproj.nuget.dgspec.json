@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Twist\\Desktop\\Cuby — копия — копия — копия — копия — копия (3) — копия — копия — копия\\Cuby\\Cuby.csproj": {}
+    "E:\\Here\\XXXX\\XXX\\Cuby\\Cuby.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Twist\\Desktop\\Cuby — копия — копия — копия — копия — копия (3) — копия — копия — копия\\Cuby\\Cuby.csproj": {
+    "E:\\Here\\XXXX\\XXX\\Cuby\\Cuby.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Twist\\Desktop\\Cuby — копия — копия — копия — копия — копия (3) — копия — копия — копия\\Cuby\\Cuby.csproj",
+        "projectUniqueName": "E:\\Here\\XXXX\\XXX\\Cuby\\Cuby.csproj",
         "projectName": "Cuby",
-        "projectPath": "C:\\Users\\Twist\\Desktop\\Cuby — копия — копия — копия — копия — копия (3) — копия — копия — копия\\Cuby\\Cuby.csproj",
+        "projectPath": "E:\\Here\\XXXX\\XXX\\Cuby\\Cuby.csproj",
         "packagesPath": "C:\\Users\\Twist\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Twist\\Desktop\\Cuby — копия — копия — копия — копия — копия (3) — копия — копия — копия\\Cuby\\obj\\",
+        "outputPath": "E:\\Here\\XXXX\\XXX\\Cuby\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [
@@ -37,32 +37,32 @@
           "net6.0-android31.0": {
             "targetAlias": "net6.0-android",
             "projectReferences": {
-              "C:\\Users\\Twist\\Desktop\\Cuby — копия — копия — копия — копия — копия (3) — копия — копия — копия\\Services\\Services.csproj": {
-                "projectPath": "C:\\Users\\Twist\\Desktop\\Cuby — копия — копия — копия — копия — копия (3) — копия — копия — копия\\Services\\Services.csproj"
+              "E:\\Here\\XXXX\\XXX\\Services\\Services.csproj": {
+                "projectPath": "E:\\Here\\XXXX\\XXX\\Services\\Services.csproj"
               }
             }
           },
           "net6.0-ios16.1": {
             "targetAlias": "net6.0-ios",
             "projectReferences": {
-              "C:\\Users\\Twist\\Desktop\\Cuby — копия — копия — копия — копия — копия (3) — копия — копия — копия\\Services\\Services.csproj": {
-                "projectPath": "C:\\Users\\Twist\\Desktop\\Cuby — копия — копия — копия — копия — копия (3) — копия — копия — копия\\Services\\Services.csproj"
+              "E:\\Here\\XXXX\\XXX\\Services\\Services.csproj": {
+                "projectPath": "E:\\Here\\XXXX\\XXX\\Services\\Services.csproj"
               }
             }
           },
           "net6.0-maccatalyst16.1": {
             "targetAlias": "net6.0-maccatalyst",
             "projectReferences": {
-              "C:\\Users\\Twist\\Desktop\\Cuby — копия — копия — копия — копия — копия (3) — копия — копия — копия\\Services\\Services.csproj": {
-                "projectPath": "C:\\Users\\Twist\\Desktop\\Cuby — копия — копия — копия — копия — копия (3) — копия — копия — копия\\Services\\Services.csproj"
+              "E:\\Here\\XXXX\\XXX\\Services\\Services.csproj": {
+                "projectPath": "E:\\Here\\XXXX\\XXX\\Services\\Services.csproj"
               }
             }
           },
           "net6.0-windows10.0.19041": {
             "targetAlias": "net6.0-windows10.0.19041.0",
             "projectReferences": {
-              "C:\\Users\\Twist\\Desktop\\Cuby — копия — копия — копия — копия — копия (3) — копия — копия — копия\\Services\\Services.csproj": {
-                "projectPath": "C:\\Users\\Twist\\Desktop\\Cuby — копия — копия — копия — копия — копия (3) — копия — копия — копия\\Services\\Services.csproj"
+              "E:\\Here\\XXXX\\XXX\\Services\\Services.csproj": {
+                "projectPath": "E:\\Here\\XXXX\\XXX\\Services\\Services.csproj"
               }
             }
           }
@@ -528,14 +528,14 @@
         }
       }
     },
-    "C:\\Users\\Twist\\Desktop\\Cuby — копия — копия — копия — копия — копия (3) — копия — копия — копия\\Models\\Models.csproj": {
+    "E:\\Here\\XXXX\\XXX\\Models\\Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Twist\\Desktop\\Cuby — копия — копия — копия — копия — копия (3) — копия — копия — копия\\Models\\Models.csproj",
+        "projectUniqueName": "E:\\Here\\XXXX\\XXX\\Models\\Models.csproj",
         "projectName": "Models",
-        "projectPath": "C:\\Users\\Twist\\Desktop\\Cuby — копия — копия — копия — копия — копия (3) — копия — копия — копия\\Models\\Models.csproj",
+        "projectPath": "E:\\Here\\XXXX\\XXX\\Models\\Models.csproj",
         "packagesPath": "C:\\Users\\Twist\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Twist\\Desktop\\Cuby — копия — копия — копия — копия — копия (3) — копия — копия — копия\\Models\\obj\\",
+        "outputPath": "E:\\Here\\XXXX\\XXX\\Models\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -588,14 +588,14 @@
         }
       }
     },
-    "C:\\Users\\Twist\\Desktop\\Cuby — копия — копия — копия — копия — копия (3) — копия — копия — копия\\Services\\Services.csproj": {
+    "E:\\Here\\XXXX\\XXX\\Services\\Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Twist\\Desktop\\Cuby — копия — копия — копия — копия — копия (3) — копия — копия — копия\\Services\\Services.csproj",
+        "projectUniqueName": "E:\\Here\\XXXX\\XXX\\Services\\Services.csproj",
         "projectName": "Services",
-        "projectPath": "C:\\Users\\Twist\\Desktop\\Cuby — копия — копия — копия — копия — копия (3) — копия — копия — копия\\Services\\Services.csproj",
+        "projectPath": "E:\\Here\\XXXX\\XXX\\Services\\Services.csproj",
         "packagesPath": "C:\\Users\\Twist\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Twist\\Desktop\\Cuby — копия — копия — копия — копия — копия (3) — копия — копия — копия\\Services\\obj\\",
+        "outputPath": "E:\\Here\\XXXX\\XXX\\Services\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -617,8 +617,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Twist\\Desktop\\Cuby — копия — копия — копия — копия — копия (3) — копия — копия — копия\\Models\\Models.csproj": {
-                "projectPath": "C:\\Users\\Twist\\Desktop\\Cuby — копия — копия — копия — копия — копия (3) — копия — копия — копия\\Models\\Models.csproj"
+              "E:\\Here\\XXXX\\XXX\\Models\\Models.csproj": {
+                "projectPath": "E:\\Here\\XXXX\\XXX\\Models\\Models.csproj"
               }
             }
           }

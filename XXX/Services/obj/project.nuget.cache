@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3F5WjSDC5F+3g2jlemJrm55+4L62nm6tb82ye1jKOZH1U+XeXMPh3h45gnVSG6uYkW+q0lXV7nFiLT7mUPxATg==",
+  "dgSpecHash": "JIIEnvVU8sTSnsg2GC+kPRpU1FyQYx5eBklOcsaGe3Q6TyT7+zQMcZCkHHyingPH7J52MLseqqLBeyPfuYatEQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Twist\\Desktop\\Cuby — копия — копия — копия — копия — копия (3) — копия — копия — копия\\Services\\Services.csproj",
+  "projectFilePath": "E:\\Here\\XXXX\\XXX\\Services\\Services.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Twist\\.nuget\\packages\\microsoft.aspnetcore.authorization\\6.0.8\\microsoft.aspnetcore.authorization.6.0.8.nupkg.sha512",
     "C:\\Users\\Twist\\.nuget\\packages\\microsoft.aspnetcore.components\\6.0.8\\microsoft.aspnetcore.components.6.0.8.nupkg.sha512",

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Twist\\Desktop\\Cuby — копия — копия — копия — копия — копия (3) — копия — копия — копия\\ApiCuby\\ApiCuby.csproj": {}
+    "E:\\Here\\XXXX\\XXX\\ApiCuby\\ApiCuby.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Twist\\Desktop\\Cuby — копия — копия — копия — копия — копия (3) — копия — копия — копия\\ApiCuby\\ApiCuby.csproj": {
+    "E:\\Here\\XXXX\\XXX\\ApiCuby\\ApiCuby.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Twist\\Desktop\\Cuby — копия — копия — копия — копия — копия (3) — копия — копия — копия\\ApiCuby\\ApiCuby.csproj",
+        "projectUniqueName": "E:\\Here\\XXXX\\XXX\\ApiCuby\\ApiCuby.csproj",
         "projectName": "ApiCuby",
-        "projectPath": "C:\\Users\\Twist\\Desktop\\Cuby — копия — копия — копия — копия — копия (3) — копия — копия — копия\\ApiCuby\\ApiCuby.csproj",
+        "projectPath": "E:\\Here\\XXXX\\XXX\\ApiCuby\\ApiCuby.csproj",
         "packagesPath": "C:\\Users\\Twist\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Twist\\Desktop\\Cuby — копия — копия — копия — копия — копия (3) — копия — копия — копия\\ApiCuby\\obj\\",
+        "outputPath": "E:\\Here\\XXXX\\XXX\\ApiCuby\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -33,8 +33,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Twist\\Desktop\\Cuby — копия — копия — копия — копия — копия (3) — копия — копия — копия\\ApiServices\\ApiServices.csproj": {
-                "projectPath": "C:\\Users\\Twist\\Desktop\\Cuby — копия — копия — копия — копия — копия (3) — копия — копия — копия\\ApiServices\\ApiServices.csproj"
+              "E:\\Here\\XXXX\\XXX\\ApiServices\\ApiServices.csproj": {
+                "projectPath": "E:\\Here\\XXXX\\XXX\\ApiServices\\ApiServices.csproj"
               }
             }
           }
@@ -93,14 +93,14 @@
         }
       }
     },
-    "C:\\Users\\Twist\\Desktop\\Cuby — копия — копия — копия — копия — копия (3) — копия — копия — копия\\ApiServices\\ApiServices.csproj": {
+    "E:\\Here\\XXXX\\XXX\\ApiServices\\ApiServices.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Twist\\Desktop\\Cuby — копия — копия — копия — копия — копия (3) — копия — копия — копия\\ApiServices\\ApiServices.csproj",
+        "projectUniqueName": "E:\\Here\\XXXX\\XXX\\ApiServices\\ApiServices.csproj",
         "projectName": "ApiServices",
-        "projectPath": "C:\\Users\\Twist\\Desktop\\Cuby — копия — копия — копия — копия — копия (3) — копия — копия — копия\\ApiServices\\ApiServices.csproj",
+        "projectPath": "E:\\Here\\XXXX\\XXX\\ApiServices\\ApiServices.csproj",
         "packagesPath": "C:\\Users\\Twist\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Twist\\Desktop\\Cuby — копия — копия — копия — копия — копия (3) — копия — копия — копия\\ApiServices\\obj\\",
+        "outputPath": "E:\\Here\\XXXX\\XXX\\ApiServices\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -122,8 +122,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Twist\\Desktop\\Cuby — копия — копия — копия — копия — копия (3) — копия — копия — копия\\Models\\Models.csproj": {
-                "projectPath": "C:\\Users\\Twist\\Desktop\\Cuby — копия — копия — копия — копия — копия (3) — копия — копия — копия\\Models\\Models.csproj"
+              "E:\\Here\\XXXX\\XXX\\Models\\Models.csproj": {
+                "projectPath": "E:\\Here\\XXXX\\XXX\\Models\\Models.csproj"
               }
             }
           }
@@ -175,14 +175,14 @@
         }
       }
     },
-    "C:\\Users\\Twist\\Desktop\\Cuby — копия — копия — копия — копия — копия (3) — копия — копия — копия\\Models\\Models.csproj": {
+    "E:\\Here\\XXXX\\XXX\\Models\\Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Twist\\Desktop\\Cuby — копия — копия — копия — копия — копия (3) — копия — копия — копия\\Models\\Models.csproj",
+        "projectUniqueName": "E:\\Here\\XXXX\\XXX\\Models\\Models.csproj",
         "projectName": "Models",
-        "projectPath": "C:\\Users\\Twist\\Desktop\\Cuby — копия — копия — копия — копия — копия (3) — копия — копия — копия\\Models\\Models.csproj",
+        "projectPath": "E:\\Here\\XXXX\\XXX\\Models\\Models.csproj",
         "packagesPath": "C:\\Users\\Twist\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Twist\\Desktop\\Cuby — копия — копия — копия — копия — копия (3) — копия — копия — копия\\Models\\obj\\",
+        "outputPath": "E:\\Here\\XXXX\\XXX\\Models\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

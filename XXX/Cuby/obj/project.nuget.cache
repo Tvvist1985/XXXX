@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "OBRYSo9aWPow35E5HlA0B1+ckyuV5pCH0o3bMh7f8IvSuAAgC6UlufHOIumPbLer/OVrgxEmMaSniCoWiBZDFQ==",
+  "dgSpecHash": "2p4lvn3dBPbqu6T5gQLDzC83Kv40S7lkDSVs2lz6MEp8J/H6wsr7oytE87r9T7NwIdPCqOf6WSsGdLBhiUbwiQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Twist\\Desktop\\Cuby — копия — копия — копия — копия — копия (3) — копия — копия — копия\\Cuby\\Cuby.csproj",
+  "projectFilePath": "E:\\Here\\XXXX\\XXX\\Cuby\\Cuby.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Twist\\.nuget\\packages\\googlegson\\2.9.0.1\\googlegson.2.9.0.1.nupkg.sha512",
     "C:\\Users\\Twist\\.nuget\\packages\\microsoft.aspnetcore.authorization\\6.0.8\\microsoft.aspnetcore.authorization.6.0.8.nupkg.sha512",

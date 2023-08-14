@@ -1,83 +1,87 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\Twist\\Desktop\\Cuby — копия — копия — копия — копия — копия (3) — копия — копия — копия\\Cuby\\obj\\Debug\\net6.0-windows10.0.19041.0\\win10-x64\\scopedcss\\bundle\\Cuby.styles.css",
+      "Id": "E:\\Here\\XXXX\\XXX\\Cuby\\obj\\Debug\\net6.0-windows10.0.19041.0\\win10-x64\\scopedcss\\bundle\\Cuby.styles.css",
       "PackagePath": "staticwebassets\\Cuby.styles.css"
     },
     {
-      "Id": "C:\\Users\\Twist\\Desktop\\Cuby — копия — копия — копия — копия — копия (3) — копия — копия — копия\\Cuby\\wwwroot\\Images\\Delete.png",
+      "Id": "E:\\Here\\XXXX\\XXX\\Cuby\\wwwroot\\Images\\Delete.png",
       "PackagePath": "staticwebassets\\Images\\Delete.png"
     },
     {
-      "Id": "C:\\Users\\Twist\\Desktop\\Cuby — копия — копия — копия — копия — копия (3) — копия — копия — копия\\Cuby\\wwwroot\\MyScript.js",
+      "Id": "E:\\Here\\XXXX\\XXX\\Cuby\\wwwroot\\Locations.json",
+      "PackagePath": "staticwebassets\\Locations.json"
+    },
+    {
+      "Id": "E:\\Here\\XXXX\\XXX\\Cuby\\wwwroot\\MyScript.js",
       "PackagePath": "staticwebassets\\MyScript.js"
     },
     {
-      "Id": "C:\\Users\\Twist\\Desktop\\Cuby — копия — копия — копия — копия — копия (3) — копия — копия — копия\\Cuby\\wwwroot\\css\\Images\\Delete.png",
+      "Id": "E:\\Here\\XXXX\\XXX\\Cuby\\wwwroot\\css\\Images\\Delete.png",
       "PackagePath": "staticwebassets\\css\\Images\\Delete.png"
     },
     {
-      "Id": "C:\\Users\\Twist\\Desktop\\Cuby — копия — копия — копия — копия — копия (3) — копия — копия — копия\\Cuby\\wwwroot\\css\\MainStyle.css",
+      "Id": "E:\\Here\\XXXX\\XXX\\Cuby\\wwwroot\\css\\MainStyle.css",
       "PackagePath": "staticwebassets\\css\\MainStyle.css"
     },
     {
-      "Id": "C:\\Users\\Twist\\Desktop\\Cuby — копия — копия — копия — копия — копия (3) — копия — копия — копия\\Cuby\\wwwroot\\css\\MyStyle.css",
+      "Id": "E:\\Here\\XXXX\\XXX\\Cuby\\wwwroot\\css\\MyStyle.css",
       "PackagePath": "staticwebassets\\css\\MyStyle.css"
     },
     {
-      "Id": "C:\\Users\\Twist\\Desktop\\Cuby — копия — копия — копия — копия — копия (3) — копия — копия — копия\\Cuby\\wwwroot\\css\\app.css",
+      "Id": "E:\\Here\\XXXX\\XXX\\Cuby\\wwwroot\\css\\app.css",
       "PackagePath": "staticwebassets\\css\\app.css"
     },
     {
-      "Id": "C:\\Users\\Twist\\Desktop\\Cuby — копия — копия — копия — копия — копия (3) — копия — копия — копия\\Cuby\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "Id": "E:\\Here\\XXXX\\XXX\\Cuby\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\Twist\\Desktop\\Cuby — копия — копия — копия — копия — копия (3) — копия — копия — копия\\Cuby\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "Id": "E:\\Here\\XXXX\\XXX\\Cuby\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Twist\\Desktop\\Cuby — копия — копия — копия — копия — копия (3) — копия — копия — копия\\Cuby\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "Id": "E:\\Here\\XXXX\\XXX\\Cuby\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
       "PackagePath": "staticwebassets\\css\\open-iconic"
     },
     {
-      "Id": "C:\\Users\\Twist\\Desktop\\Cuby — копия — копия — копия — копия — копия (3) — копия — копия — копия\\Cuby\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
+      "Id": "E:\\Here\\XXXX\\XXX\\Cuby\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
       "PackagePath": "staticwebassets\\css\\open-iconic"
     },
     {
-      "Id": "C:\\Users\\Twist\\Desktop\\Cuby — копия — копия — копия — копия — копия (3) — копия — копия — копия\\Cuby\\wwwroot\\css\\open-iconic\\README.md",
+      "Id": "E:\\Here\\XXXX\\XXX\\Cuby\\wwwroot\\css\\open-iconic\\README.md",
       "PackagePath": "staticwebassets\\css\\open-iconic\\README.md"
     },
     {
-      "Id": "C:\\Users\\Twist\\Desktop\\Cuby — копия — копия — копия — копия — копия (3) — копия — копия — копия\\Cuby\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
+      "Id": "E:\\Here\\XXXX\\XXX\\Cuby\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
       "PackagePath": "staticwebassets\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\Twist\\Desktop\\Cuby — копия — копия — копия — копия — копия (3) — копия — копия — копия\\Cuby\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
+      "Id": "E:\\Here\\XXXX\\XXX\\Cuby\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
       "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.eot"
     },
     {
-      "Id": "C:\\Users\\Twist\\Desktop\\Cuby — копия — копия — копия — копия — копия (3) — копия — копия — копия\\Cuby\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
+      "Id": "E:\\Here\\XXXX\\XXX\\Cuby\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
       "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.otf"
     },
     {
-      "Id": "C:\\Users\\Twist\\Desktop\\Cuby — копия — копия — копия — копия — копия (3) — копия — копия — копия\\Cuby\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
+      "Id": "E:\\Here\\XXXX\\XXX\\Cuby\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
       "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.svg"
     },
     {
-      "Id": "C:\\Users\\Twist\\Desktop\\Cuby — копия — копия — копия — копия — копия (3) — копия — копия — копия\\Cuby\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
+      "Id": "E:\\Here\\XXXX\\XXX\\Cuby\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
       "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.ttf"
     },
     {
-      "Id": "C:\\Users\\Twist\\Desktop\\Cuby — копия — копия — копия — копия — копия (3) — копия — копия — копия\\Cuby\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
+      "Id": "E:\\Here\\XXXX\\XXX\\Cuby\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
       "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
     },
     {
-      "Id": "C:\\Users\\Twist\\Desktop\\Cuby — копия — копия — копия — копия — копия (3) — копия — копия — копия\\Cuby\\wwwroot\\favicon.ico",
+      "Id": "E:\\Here\\XXXX\\XXX\\Cuby\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\Users\\Twist\\Desktop\\Cuby — копия — копия — копия — копия — копия (3) — копия — копия — копия\\Cuby\\wwwroot\\index.html",
+      "Id": "E:\\Here\\XXXX\\XXX\\Cuby\\wwwroot\\index.html",
       "PackagePath": "staticwebassets\\index.html"
     },
     {

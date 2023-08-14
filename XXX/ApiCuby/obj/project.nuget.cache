@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "oWjekcO5SKnygIg5ly/Zzg1kL+O5RWGVenNqlSrbgl6DH263112aLCmgvjwIuJw2ybtwoyIA9qnHVuXmpJfMmA==",
+  "dgSpecHash": "I0RRmVqjG41+IxegA/SRtEiy/Gg8vp4Gm5kBj5Mo/nZI3feMnWL+frhObVRd0zaWiTprfGfKWMFGhBMOF9Swng==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Twist\\Desktop\\Cuby — копия — копия — копия — копия — копия (3) — копия — копия — копия\\ApiCuby\\ApiCuby.csproj",
+  "projectFilePath": "E:\\Here\\XXXX\\XXX\\ApiCuby\\ApiCuby.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Twist\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Twist\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\6.0.16\\microsoft.aspnetcore.authentication.jwtbearer.6.0.16.nupkg.sha512",

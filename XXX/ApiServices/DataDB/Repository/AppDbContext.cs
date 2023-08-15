@@ -53,19 +53,111 @@ namespace ApiServices.DataDB.Repository
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            //DONT DELETE!!!!!!!!!!!!
-            //Инициализирую базу начальным MAP
-            modelBuilder.Entity<UsersMapDTO>().HasData(
-                new UsersMapDTO { Id = Guid.NewGuid(), Gender = "Man" },
-                new UsersMapDTO { Id = Guid.NewGuid(), Gender = "Woman" }
-            );
-
             //Наследование таблиц стратегия TPC
             modelBuilder.Entity<MainUserDTO>().UseTpcMappingStrategy();
             modelBuilder.Entity<EventUserDTO>().UseTpcMappingStrategy();
             modelBuilder.Entity<AponentDTO>().UseTpcMappingStrategy();
             modelBuilder.Entity<MonetizedDataDTO>().UseTpcMappingStrategy();
-            modelBuilder.Entity<DeleteSympathyDTO>().UseTpcMappingStrategy();         
+            modelBuilder.Entity<DeleteSympathyDTO>().UseTpcMappingStrategy();
+
+            //Add initial Map
+            Guid manId = Guid.NewGuid();
+            Guid womanId = Guid.NewGuid();
+            modelBuilder.Entity<UsersMapDTO>().HasData(
+                new UsersMapDTO { Id = manId, Gender = "Man" },
+                new UsersMapDTO { Id = womanId, Gender = "Woman" });
+
+            //Add initial data
+            AddInitialMan(modelBuilder, manId, 1);
+            AddInitialMan(modelBuilder, manId, 2);
+
+            AddInitialWoman(modelBuilder, womanId, 3);
+            AddInitialWoman(modelBuilder, womanId, 4);
+        }
+
+        //Method: Add initial data
+        private void AddInitialMan(ModelBuilder modelBuilder, in Guid mapId, byte endId)
+        {
+
+
+            //Abb users            
+            modelBuilder.Entity<UserManDTOTBL1>().HasData(
+               new UserManDTOTBL1
+               {
+                   Id = new Guid($"00000000-0000-0000-0000-00000000000" + endId),
+                   UsersMapDTOId = mapId,
+                   FirstName = "Demo"+ mapId,
+                   DateOfBirth = new(2000, 1, 1),
+                   Gender = "Man",
+                   Сountry = "Russia",
+                   City = "Moscow",
+                   EmailAdress = $"11{endId}@111.com",
+                   Telephone = 123,
+                   Password = "11111",
+                   ConfirmPassword = "11111"
+               });
+
+            //add apponent data
+            modelBuilder.Entity<AponentForManDTOTbl1>().HasData(
+               new AponentForManDTOTbl1
+               {
+                   Id = new Guid($"00000000-0000-0000-0000-00000000000" + endId),
+                   MyGender = "Man",
+                   Сountry = "Russia",
+                   City = "Moscow",
+                   MainUserDTOId = new Guid($"00000000-0000-0000-0000-00000000000" + endId)
+               }
+               );
+
+            //Add monitized data
+            modelBuilder.Entity<MonetizedForManTBL1>().HasData(
+              new MonetizedForManTBL1
+              {
+                  Id = new Guid("00000000-0000-0000-0000-00000000000" + endId),
+                  TimeLastSession = DateTime.Now,
+                  MainUserDTOId = new Guid($"00000000-0000-0000-0000-00000000000" + endId)
+              });
+        }
+        //Method: Add initial data
+        private void AddInitialWoman(ModelBuilder modelBuilder, in Guid mapId, byte endId)
+        {
+            //Abb users            
+            modelBuilder.Entity<UserWomanDTOTBL1>().HasData(
+               new UserWomanDTOTBL1
+               {
+                   Id = new Guid($"00000000-0000-0000-0000-00000000000" + endId),
+                   UsersMapDTOId = mapId,
+                   FirstName = "Demo" + mapId,
+                   DateOfBirth = new(2000, 1, 1),
+                   Gender = "Man",
+                   Сountry = "Russia",
+                   City = "Moscow",
+                   EmailAdress = $"11{endId}@111.com",
+                   Telephone = 123,
+                   Password = "11111",
+                   ConfirmPassword = "11111"
+               });
+
+            //add apponent data
+            modelBuilder.Entity<AponentForWomanDTOTbl1>().HasData(
+               new AponentForWomanDTOTbl1
+               {
+                   Id = new Guid($"00000000-0000-0000-0000-00000000000" + endId),
+                   MyGender = "Man",
+                   Сountry = "Russia",
+                   City = "Moscow",
+                   MainUserDTOId = new Guid($"00000000-0000-0000-0000-00000000000" + endId)
+               }
+               );
+
+            //Add monitized data
+            modelBuilder.Entity<MonetizedForWomanTBL1>().HasData(
+              new MonetizedForWomanTBL1
+              {
+                  Id = new Guid("00000000-0000-0000-0000-00000000000" + endId),
+                  TimeLastSession = DateTime.Now,
+                  MainUserDTOId = new Guid($"00000000-0000-0000-0000-00000000000" + endId)
+              });
         }
     }
 }

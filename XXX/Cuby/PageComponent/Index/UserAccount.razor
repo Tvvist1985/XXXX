@@ -1,9 +1,11 @@
 ﻿@inject BirthdayValidationService BirthdayValidation
 @inject IHttpClientService HttpClientService
 @inject NavigationManager NavigationManager
+@inject ILocationsSR ILocationsSR
 @using System.Drawing;
 @using System.Drawing.Imaging;
 @using System.Text.Json;
+
 
 <h5 class="Success">@userVM.Success</h5>
 <div style="@CSS">
@@ -136,7 +138,12 @@
         <label>
             Сountry
             <div>
-                <InputText class="form-control input-required" @bind-Value="userVM.Сountry"></InputText>
+                <InputSelect @bind-Value="userVM.Сountry" @oninput="() => Task.Run(() => ILocationsSR.GetNewCitiesForUser(userVM.Сountry,userVM))" class="form-control input-required" style="width:70vw;">
+                    @foreach (var country in ILocationsSR.Locations)
+                    {
+                        <option value="@country.Key">@country.Key</option>
+                    }
+                </InputSelect>
             </div>
         </label>
         <div class="validation-message">
@@ -146,7 +153,12 @@
         <label>
             City
             <div>
-                <InputText class="form-control input-required" @bind-Value="userVM.City"></InputText>
+                <InputSelect @bind-Value="@userVM.City" class="form-control input-required" style="width:70vw;">
+                    @foreach (var city in ILocationsSR.Locations[userVM.Сountry])
+                    {
+                        <option value="@city.name">@city.name </option>
+                    }
+                </InputSelect>
             </div>
         </label>
         <div class="validation-message">
@@ -352,6 +364,13 @@
 
     protected override async void OnInitialized()
     {
+        //Initialized dictionary
+        GetDictionaryLocations();
+        //Check initial the Country and City
+        //Дулаю вперёд  потому что Wait() и result неработает
+        userVM.InitializedForInputSelect(ILocationsSR.Locations.FirstOrDefault().Key,
+        ILocationsSR.Locations[ILocationsSR.Locations.FirstOrDefault().Key].FirstOrDefault().name);
+
         //Получаю файлик с айнтефикацией
         data = new AddJsonIdentity().DeserializeJsonFileAsync<LoginVM>();
         if (data is not null)
@@ -499,6 +518,14 @@
             }
         }
         InvokeAsync(StateHasChanged);
+    }
+
+      //Method: Get dictionary locations
+    private void GetDictionaryLocations()
+    {
+        //Get Locations.json from static files  to string
+        using var stream = FileSystem.OpenAppPackageFileAsync("wwwroot/Locations.json").Result;
+        ILocationsSR.InitializeDictionary(stream);
     }
 
     //Method: Lodout

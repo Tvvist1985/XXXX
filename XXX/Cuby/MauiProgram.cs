@@ -1,6 +1,7 @@
 ﻿using Services.ChatService;
 using Services.DateTimeService;
 using Services.HttpClientService;
+using Services.LocationsService;
 using Services.OtherActionWithCubySR;
 
 namespace Cuby;
@@ -28,6 +29,7 @@ public static class MauiProgram
 		builder.Services.AddTransient<BirthdayValidationService>();
         builder.Services.AddScoped<IChatClient, ChatClient>();          
         builder.Services.AddScoped<IOtherActionWithCuby, OtherActionWithCuby>();
+        builder.Services.AddTransient<ILocationsSR, LocationsSR>();
 #endif
 
         return builder.Build();

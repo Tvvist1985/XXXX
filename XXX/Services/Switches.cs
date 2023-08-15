@@ -2,8 +2,7 @@
 {
     public static class Switches
     {
-        public static bool SwitchZeroUSersFromDB { get; set; } = false;
-
+       
         public static event Func<Task> Render;
         public static bool SwitchLoad { get; set; } = true;
         public static bool SwitchGlobalXXX { get; set; } = false;

@@ -43,7 +43,17 @@ namespace Models.ModelVM
                 mainData.AboutMe = AboutMe;
             });
         }
-       
+
+        //Method: Initialized country and city fo InputSelect
+        public void InitializedForInputSelect(string country, string city)
+        {
+            if (string.IsNullOrEmpty(Сountry))
+            {
+                Сountry = country;
+                City = city;
+            }
+        }
+
         //Method: инициализирую фото в base64 для отправки
         public async Task InitializIMG(Func<string[], Task<string>> GetDirectory, Func<string, Task<string[]>> GetFileNames,
             Func<string,string,Task<string>> GetImgBase64)

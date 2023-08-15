@@ -86,7 +86,7 @@ namespace ApiServices.DataDB.Repository
                {
                    Id = new Guid($"00000000-0000-0000-0000-00000000000" + endId),
                    UsersMapDTOId = mapId,
-                   FirstName = "Demo"+ mapId,
+                   FirstName = $"Demo"+ endId,
                    DateOfBirth = new(2000, 1, 1),
                    Gender = "Man",
                    Сountry = "Russia",
@@ -127,9 +127,9 @@ namespace ApiServices.DataDB.Repository
                {
                    Id = new Guid($"00000000-0000-0000-0000-00000000000" + endId),
                    UsersMapDTOId = mapId,
-                   FirstName = "Demo" + mapId,
+                   FirstName = $"Demo" + endId,
                    DateOfBirth = new(2000, 1, 1),
-                   Gender = "Man",
+                   Gender = "Woman",
                    Сountry = "Russia",
                    City = "Moscow",
                    EmailAdress = $"11{endId}@111.com",
@@ -143,7 +143,7 @@ namespace ApiServices.DataDB.Repository
                new AponentForWomanDTOTbl1
                {
                    Id = new Guid($"00000000-0000-0000-0000-00000000000" + endId),
-                   MyGender = "Man",
+                   MyGender = "Woman",
                    Сountry = "Russia",
                    City = "Moscow",
                    MainUserDTOId = new Guid($"00000000-0000-0000-0000-00000000000" + endId)

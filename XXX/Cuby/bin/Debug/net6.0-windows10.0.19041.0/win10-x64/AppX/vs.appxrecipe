@@ -10,7 +10,7 @@
     <PackageArchitecture>x64</PackageArchitecture>
     <PackageIdentityName>C83FA449-4797-485C-9527-DCA015162A0C</PackageIdentityName>
     <PackageIdentityPublisher>CN=User Name</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\</IntermediateOutputPath>
+    <IntermediateOutputPath>E:\Here\XXXX\XXX\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\</IntermediateOutputPath>
     <RemoteDeploymentType>CopyToDevice</RemoteDeploymentType>
     <PackageRegistrationPath>
     </PackageRegistrationPath>
@@ -18,7 +18,7 @@
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>
     </WindowsSdkPath>
-    <LayoutDir>C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\AppX</LayoutDir>
+    <LayoutDir>E:\Here\XXXX\XXX\Cuby\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\AppX</LayoutDir>
     <RegisteredManifestChecksum>B831DA29B9BAF5C6265CAB95CEA5B7DCE4572D55CCFD967B33F7589344022664</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>C83FA449-4797-485C-9527-DCA015162A0C_1.0.0.1_x64__9zz4h110yvjzm</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>C83FA449-4797-485C-9527-DCA015162A0C_9zz4h110yvjzm!App</RegisteredUserModeAppID>
@@ -27,28 +27,28 @@
     <RegisteredVersion>1.0.0.1</RegisteredVersion>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
+    <AppXManifest Include="E:\Here\XXXX\XXX\Cuby\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-08-07T13:26:45.130</Modified>
+      <Modified>2023-08-15T08:17:33.864</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\resources.pri">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2023-08-07T13:26:44.066</Modified>
+      <Modified>2023-08-15T08:17:32.015</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\Cuby.runtimeconfig.json">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\Cuby.runtimeconfig.json">
       <PackagePath>Cuby.runtimeconfig.json</PackagePath>
-      <Modified>2023-08-04T09:49:28.470</Modified>
+      <Modified>2023-08-15T06:25:38.875</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\Cuby.dll">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\Cuby.dll">
       <PackagePath>Cuby.dll</PackagePath>
-      <Modified>2023-08-07T13:26:42.791</Modified>
+      <Modified>2023-08-15T08:17:29.943</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\apphost.exe">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>Cuby.exe</PackagePath>
-      <Modified>2023-08-07T13:26:42.804</Modified>
+      <Modified>2023-08-15T08:17:29.985</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Twist\.nuget\packages\microsoft.netcore.app.runtime.win-x64\6.0.12\runtimes\win-x64\lib\net6.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -1174,17 +1174,17 @@
       <PackagePath>Microsoft.WindowsAppRuntime.Bootstrap.dll</PackagePath>
       <Modified>2022-07-19T16:53:02.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Models\bin\Debug\net6.0\Models.dll">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Models\bin\Debug\net6.0\Models.dll">
       <PackagePath>Models.dll</PackagePath>
-      <Modified>2023-08-07T10:15:26.938</Modified>
+      <Modified>2023-08-15T06:25:10.896</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Services\bin\Debug\net6.0\Services.dll">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Services\bin\Debug\net6.0\Services.dll">
       <PackagePath>Services.dll</PackagePath>
-      <Modified>2023-08-07T10:15:40.676</Modified>
+      <Modified>2023-08-15T07:58:04.250</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\Cuby.deps.json">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\Cuby.deps.json">
       <PackagePath>Cuby.deps.json</PackagePath>
-      <Modified>2023-08-07T13:26:44.660</Modified>
+      <Modified>2023-08-15T08:17:33.496</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Twist\.nuget\packages\microsoft.maui.controls.ref.win\6.0.548\ref\net6.0-windows10.0.19041\Microsoft.Maui.Controls.Compatibility.pri">
       <PackagePath>Microsoft.Maui.Controls.Compatibility.pri</PackagePath>
@@ -1198,329 +1198,333 @@
       <PackagePath>Microsoft.Maui.pri</PackagePath>
       <Modified>2022-11-17T18:14:24.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\Resources\Raw\AboutAssets.txt">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
-      <Modified>2023-05-25T07:21:06.189</Modified>
+      <Modified>2023-08-14T12:20:05.021</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\scopedcss\bundle\Cuby.styles.css">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\scopedcss\bundle\Cuby.styles.css">
       <PackagePath>wwwroot\Cuby.styles.css</PackagePath>
-      <Modified>2023-06-14T11:53:46.655</Modified>
+      <Modified>2023-08-14T12:20:12.737</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\scopedcss\projectbundle\Cuby.bundle.scp.css">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\scopedcss\projectbundle\Cuby.bundle.scp.css">
       <PackagePath>wwwroot\Cuby.bundle.scp.css</PackagePath>
-      <Modified>2023-06-14T11:53:46.663</Modified>
+      <Modified>2023-08-14T12:20:12.738</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\wwwroot\css\app.css">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\wwwroot\css\app.css">
       <PackagePath>wwwroot\css\app.css</PackagePath>
-      <Modified>2023-05-25T07:21:05.948</Modified>
+      <Modified>2023-08-14T12:20:12.755</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\wwwroot\css\bootstrap\bootstrap.min.css">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\wwwroot\css\bootstrap\bootstrap.min.css">
       <PackagePath>wwwroot\css\bootstrap\bootstrap.min.css</PackagePath>
-      <Modified>2023-05-25T07:21:05.956</Modified>
+      <Modified>2023-08-14T12:20:12.757</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\wwwroot\css\bootstrap\bootstrap.min.css.map">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\wwwroot\css\bootstrap\bootstrap.min.css.map">
       <PackagePath>wwwroot\css\bootstrap\bootstrap.min.css.map</PackagePath>
-      <Modified>2023-05-25T07:21:05.962</Modified>
+      <Modified>2023-08-14T12:20:12.760</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\wwwroot\css\Images\Delete.png">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\wwwroot\css\Images\Delete.png">
       <PackagePath>wwwroot\css\Images\Delete.png</PackagePath>
-      <Modified>2022-12-12T04:56:43.216</Modified>
+      <Modified>2023-08-14T12:20:12.755</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\wwwroot\css\MainStyle.css">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\wwwroot\css\MainStyle.css">
       <PackagePath>wwwroot\css\MainStyle.css</PackagePath>
-      <Modified>2023-08-07T08:46:14.284</Modified>
+      <Modified>2023-08-14T12:20:12.755</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\wwwroot\css\MyStyle.css">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\wwwroot\css\MyStyle.css">
       <PackagePath>wwwroot\css\MyStyle.css</PackagePath>
-      <Modified>2023-08-07T08:28:50.001</Modified>
+      <Modified>2023-08-14T12:20:12.755</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\wwwroot\css\open-iconic\font\css\open-iconic-bootstrap.min.css">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\wwwroot\css\open-iconic\font\css\open-iconic-bootstrap.min.css">
       <PackagePath>wwwroot\css\open-iconic\font\css\open-iconic-bootstrap.min.css</PackagePath>
-      <Modified>2023-05-25T07:21:06.095</Modified>
+      <Modified>2023-08-14T12:20:12.762</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\wwwroot\css\open-iconic\font\fonts\open-iconic.eot">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\wwwroot\css\open-iconic\font\fonts\open-iconic.eot">
       <PackagePath>wwwroot\css\open-iconic\font\fonts\open-iconic.eot</PackagePath>
-      <Modified>2023-05-25T07:21:06.157</Modified>
+      <Modified>2023-08-14T12:20:12.763</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\wwwroot\css\open-iconic\font\fonts\open-iconic.otf">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\wwwroot\css\open-iconic\font\fonts\open-iconic.otf">
       <PackagePath>wwwroot\css\open-iconic\font\fonts\open-iconic.otf</PackagePath>
-      <Modified>2023-05-25T07:21:06.166</Modified>
+      <Modified>2023-08-14T12:20:12.764</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\wwwroot\css\open-iconic\font\fonts\open-iconic.svg">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\wwwroot\css\open-iconic\font\fonts\open-iconic.svg">
       <PackagePath>wwwroot\css\open-iconic\font\fonts\open-iconic.svg</PackagePath>
-      <Modified>2023-05-25T07:21:06.168</Modified>
+      <Modified>2023-08-14T12:20:12.764</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\wwwroot\css\open-iconic\font\fonts\open-iconic.ttf">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\wwwroot\css\open-iconic\font\fonts\open-iconic.ttf">
       <PackagePath>wwwroot\css\open-iconic\font\fonts\open-iconic.ttf</PackagePath>
-      <Modified>2023-05-25T07:21:06.171</Modified>
+      <Modified>2023-08-14T12:20:12.765</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\wwwroot\css\open-iconic\font\fonts\open-iconic.woff">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\wwwroot\css\open-iconic\font\fonts\open-iconic.woff">
       <PackagePath>wwwroot\css\open-iconic\font\fonts\open-iconic.woff</PackagePath>
-      <Modified>2023-05-25T07:21:06.173</Modified>
+      <Modified>2023-08-14T12:20:12.765</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\wwwroot\css\open-iconic\FONT-LICENSE">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\wwwroot\css\open-iconic\FONT-LICENSE">
       <PackagePath>wwwroot\css\open-iconic\FONT-LICENSE</PackagePath>
-      <Modified>2023-05-25T07:21:05.965</Modified>
+      <Modified>2023-08-14T12:20:12.761</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\wwwroot\css\open-iconic\ICON-LICENSE">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\wwwroot\css\open-iconic\ICON-LICENSE">
       <PackagePath>wwwroot\css\open-iconic\ICON-LICENSE</PackagePath>
-      <Modified>2023-05-25T07:21:06.083</Modified>
+      <Modified>2023-08-14T12:20:12.761</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\wwwroot\css\open-iconic\README.md">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\wwwroot\css\open-iconic\README.md">
       <PackagePath>wwwroot\css\open-iconic\README.md</PackagePath>
-      <Modified>2023-05-25T07:21:06.091</Modified>
+      <Modified>2023-08-14T12:20:12.761</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\wwwroot\favicon.ico">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\wwwroot\favicon.ico">
       <PackagePath>wwwroot\favicon.ico</PackagePath>
-      <Modified>2023-05-25T07:21:06.303</Modified>
+      <Modified>2023-08-14T12:20:12.766</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\wwwroot\Images\Delete.png">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\wwwroot\Images\Delete.png">
       <PackagePath>wwwroot\Images\Delete.png</PackagePath>
-      <Modified>2022-12-12T04:56:43.216</Modified>
+      <Modified>2023-08-14T12:20:12.753</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\wwwroot\index.html">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\wwwroot\index.html">
       <PackagePath>wwwroot\index.html</PackagePath>
-      <Modified>2023-08-07T10:16:35.571</Modified>
+      <Modified>2023-08-14T12:20:12.766</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\wwwroot\MyScript.js">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\wwwroot\Locations.json">
+      <PackagePath>wwwroot\Locations.json</PackagePath>
+      <Modified>2023-08-14T12:15:36.298</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\wwwroot\MyScript.js">
       <PackagePath>wwwroot\MyScript.js</PackagePath>
-      <Modified>2023-05-10T05:57:40.023</Modified>
+      <Modified>2023-08-14T12:20:12.754</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-100.png">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-100.png">
       <PackagePath>splashSplashScreen.scale-100.png</PackagePath>
-      <Modified>2023-06-14T11:53:59.057</Modified>
+      <Modified>2023-08-14T12:20:12.733</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-125.png">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-125.png">
       <PackagePath>splashSplashScreen.scale-125.png</PackagePath>
-      <Modified>2023-06-14T11:53:59.088</Modified>
+      <Modified>2023-08-14T12:20:12.733</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-150.png">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-150.png">
       <PackagePath>splashSplashScreen.scale-150.png</PackagePath>
-      <Modified>2023-06-14T11:53:59.139</Modified>
+      <Modified>2023-08-14T12:20:12.734</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-200.png">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-200.png">
       <PackagePath>splashSplashScreen.scale-200.png</PackagePath>
-      <Modified>2023-06-14T11:53:59.208</Modified>
+      <Modified>2023-08-14T12:20:12.734</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-400.png">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-400.png">
       <PackagePath>splashSplashScreen.scale-400.png</PackagePath>
-      <Modified>2023-06-14T11:53:59.455</Modified>
+      <Modified>2023-08-14T12:20:12.735</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Regular.ttf">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Regular.ttf">
       <PackagePath>OpenSans-Regular.ttf</PackagePath>
-      <Modified>2023-05-25T07:21:06.186</Modified>
+      <Modified>2023-08-14T12:20:12.714</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico">
       <PackagePath>appicon.ico</PackagePath>
-      <Modified>2023-06-14T11:53:59.523</Modified>
+      <Modified>2023-08-14T12:20:12.715</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-100.png">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-100.png">
       <PackagePath>appiconLargeTile.scale-100.png</PackagePath>
-      <Modified>2023-06-14T11:53:59.985</Modified>
+      <Modified>2023-08-14T12:20:12.715</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-125.png">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-125.png">
       <PackagePath>appiconLargeTile.scale-125.png</PackagePath>
-      <Modified>2023-06-14T11:54:00.014</Modified>
+      <Modified>2023-08-14T12:20:12.716</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-150.png">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-150.png">
       <PackagePath>appiconLargeTile.scale-150.png</PackagePath>
-      <Modified>2023-06-14T11:54:00.040</Modified>
+      <Modified>2023-08-14T12:20:12.716</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-200.png">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-200.png">
       <PackagePath>appiconLargeTile.scale-200.png</PackagePath>
-      <Modified>2023-06-14T11:54:00.072</Modified>
+      <Modified>2023-08-14T12:20:12.716</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-400.png">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-400.png">
       <PackagePath>appiconLargeTile.scale-400.png</PackagePath>
-      <Modified>2023-06-14T11:54:00.200</Modified>
+      <Modified>2023-08-14T12:20:12.717</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-16.png">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-16.png</PackagePath>
-      <Modified>2023-06-14T11:53:59.647</Modified>
+      <Modified>2023-08-14T12:20:12.718</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-24.png">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-24.png</PackagePath>
-      <Modified>2023-06-14T11:53:59.652</Modified>
+      <Modified>2023-08-14T12:20:12.718</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-256.png">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-256.png</PackagePath>
-      <Modified>2023-06-14T11:53:59.676</Modified>
+      <Modified>2023-08-14T12:20:12.718</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-32.png">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-32.png</PackagePath>
-      <Modified>2023-06-14T11:53:59.657</Modified>
+      <Modified>2023-08-14T12:20:12.718</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-48.png">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-48.png</PackagePath>
-      <Modified>2023-06-14T11:53:59.662</Modified>
+      <Modified>2023-08-14T12:20:12.719</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-16.png">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-16.png</PackagePath>
-      <Modified>2023-06-14T11:53:59.611</Modified>
+      <Modified>2023-08-14T12:20:12.719</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-24.png">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-24.png</PackagePath>
-      <Modified>2023-06-14T11:53:59.616</Modified>
+      <Modified>2023-08-14T12:20:12.719</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-256.png">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-256.png</PackagePath>
-      <Modified>2023-06-14T11:53:59.641</Modified>
+      <Modified>2023-08-14T12:20:12.720</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-32.png">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-32.png</PackagePath>
-      <Modified>2023-06-14T11:53:59.622</Modified>
+      <Modified>2023-08-14T12:20:12.720</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-48.png">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-48.png</PackagePath>
-      <Modified>2023-06-14T11:53:59.628</Modified>
+      <Modified>2023-08-14T12:20:12.720</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-100.png">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-100.png">
       <PackagePath>appiconLogo.scale-100.png</PackagePath>
-      <Modified>2023-06-14T11:53:59.539</Modified>
+      <Modified>2023-08-14T12:20:12.721</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-125.png">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-125.png">
       <PackagePath>appiconLogo.scale-125.png</PackagePath>
-      <Modified>2023-06-14T11:53:59.545</Modified>
+      <Modified>2023-08-14T12:20:12.721</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-150.png">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-150.png">
       <PackagePath>appiconLogo.scale-150.png</PackagePath>
-      <Modified>2023-06-14T11:53:59.551</Modified>
+      <Modified>2023-08-14T12:20:12.721</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-200.png">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-200.png">
       <PackagePath>appiconLogo.scale-200.png</PackagePath>
-      <Modified>2023-06-14T11:53:59.558</Modified>
+      <Modified>2023-08-14T12:20:12.722</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-400.png">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-400.png">
       <PackagePath>appiconLogo.scale-400.png</PackagePath>
-      <Modified>2023-06-14T11:53:59.567</Modified>
+      <Modified>2023-08-14T12:20:12.722</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-16.png">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-16.png">
       <PackagePath>appiconLogo.targetsize-16.png</PackagePath>
-      <Modified>2023-06-14T11:53:59.573</Modified>
+      <Modified>2023-08-14T12:20:12.722</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-24.png">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-24.png">
       <PackagePath>appiconLogo.targetsize-24.png</PackagePath>
-      <Modified>2023-06-14T11:53:59.578</Modified>
+      <Modified>2023-08-14T12:20:12.723</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-256.png">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-256.png">
       <PackagePath>appiconLogo.targetsize-256.png</PackagePath>
-      <Modified>2023-06-14T11:53:59.606</Modified>
+      <Modified>2023-08-14T12:20:12.723</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-32.png">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-32.png">
       <PackagePath>appiconLogo.targetsize-32.png</PackagePath>
-      <Modified>2023-06-14T11:53:59.584</Modified>
+      <Modified>2023-08-14T12:20:12.723</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-48.png">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-48.png">
       <PackagePath>appiconLogo.targetsize-48.png</PackagePath>
-      <Modified>2023-06-14T11:53:59.591</Modified>
+      <Modified>2023-08-14T12:20:12.723</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-100.png">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-100.png">
       <PackagePath>appiconMediumTile.scale-100.png</PackagePath>
-      <Modified>2023-06-14T11:53:59.761</Modified>
+      <Modified>2023-08-14T12:20:12.724</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-125.png">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-125.png">
       <PackagePath>appiconMediumTile.scale-125.png</PackagePath>
-      <Modified>2023-06-14T11:53:59.771</Modified>
+      <Modified>2023-08-14T12:20:12.724</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-150.png">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-150.png">
       <PackagePath>appiconMediumTile.scale-150.png</PackagePath>
-      <Modified>2023-06-14T11:53:59.782</Modified>
+      <Modified>2023-08-14T12:20:12.724</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-200.png">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-200.png">
       <PackagePath>appiconMediumTile.scale-200.png</PackagePath>
-      <Modified>2023-06-14T11:53:59.797</Modified>
+      <Modified>2023-08-14T12:20:12.725</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-400.png">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-400.png">
       <PackagePath>appiconMediumTile.scale-400.png</PackagePath>
-      <Modified>2023-06-14T11:53:59.829</Modified>
+      <Modified>2023-08-14T12:20:12.725</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-100.png">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-100.png">
       <PackagePath>appiconSmallTile.scale-100.png</PackagePath>
-      <Modified>2023-06-14T11:53:59.717</Modified>
+      <Modified>2023-08-14T12:20:12.725</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-125.png">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-125.png">
       <PackagePath>appiconSmallTile.scale-125.png</PackagePath>
-      <Modified>2023-06-14T11:53:59.723</Modified>
+      <Modified>2023-08-14T12:20:12.725</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-150.png">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-150.png">
       <PackagePath>appiconSmallTile.scale-150.png</PackagePath>
-      <Modified>2023-06-14T11:53:59.730</Modified>
+      <Modified>2023-08-14T12:20:12.725</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-200.png">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-200.png">
       <PackagePath>appiconSmallTile.scale-200.png</PackagePath>
-      <Modified>2023-06-14T11:53:59.738</Modified>
+      <Modified>2023-08-14T12:20:12.726</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-400.png">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-400.png">
       <PackagePath>appiconSmallTile.scale-400.png</PackagePath>
-      <Modified>2023-06-14T11:53:59.753</Modified>
+      <Modified>2023-08-14T12:20:12.726</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-100.png">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-100.png">
       <PackagePath>appiconStoreLogo.scale-100.png</PackagePath>
-      <Modified>2023-06-14T11:53:59.682</Modified>
+      <Modified>2023-08-14T12:20:12.726</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-125.png">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-125.png">
       <PackagePath>appiconStoreLogo.scale-125.png</PackagePath>
-      <Modified>2023-06-14T11:53:59.687</Modified>
+      <Modified>2023-08-14T12:20:12.727</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-150.png">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-150.png">
       <PackagePath>appiconStoreLogo.scale-150.png</PackagePath>
-      <Modified>2023-06-14T11:53:59.693</Modified>
+      <Modified>2023-08-14T12:20:12.728</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-200.png">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-200.png">
       <PackagePath>appiconStoreLogo.scale-200.png</PackagePath>
-      <Modified>2023-06-14T11:53:59.701</Modified>
+      <Modified>2023-08-14T12:20:12.728</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-400.png">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-400.png">
       <PackagePath>appiconStoreLogo.scale-400.png</PackagePath>
-      <Modified>2023-06-14T11:53:59.711</Modified>
+      <Modified>2023-08-14T12:20:12.728</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-100.png">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-100.png">
       <PackagePath>appiconWideTile.scale-100.png</PackagePath>
-      <Modified>2023-06-14T11:53:59.839</Modified>
+      <Modified>2023-08-14T12:20:12.728</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-125.png">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-125.png">
       <PackagePath>appiconWideTile.scale-125.png</PackagePath>
-      <Modified>2023-06-14T11:53:59.852</Modified>
+      <Modified>2023-08-14T12:20:12.728</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-150.png">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-150.png">
       <PackagePath>appiconWideTile.scale-150.png</PackagePath>
-      <Modified>2023-06-14T11:53:59.870</Modified>
+      <Modified>2023-08-14T12:20:12.729</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-200.png">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-200.png">
       <PackagePath>appiconWideTile.scale-200.png</PackagePath>
-      <Modified>2023-06-14T11:53:59.897</Modified>
+      <Modified>2023-08-14T12:20:12.729</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
       <PackagePath>appiconWideTile.scale-400.png</PackagePath>
-      <Modified>2023-06-14T11:53:59.963</Modified>
+      <Modified>2023-08-14T12:20:12.729</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
       <PackagePath>dotnet_bot.scale-100.png</PackagePath>
-      <Modified>2023-06-14T11:53:59.596</Modified>
+      <Modified>2023-08-14T12:20:12.730</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png">
       <PackagePath>dotnet_bot.scale-125.png</PackagePath>
-      <Modified>2023-06-14T11:53:59.613</Modified>
+      <Modified>2023-08-14T12:20:12.730</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png">
       <PackagePath>dotnet_bot.scale-150.png</PackagePath>
-      <Modified>2023-06-14T11:53:59.635</Modified>
+      <Modified>2023-08-14T12:20:12.730</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png">
       <PackagePath>dotnet_bot.scale-200.png</PackagePath>
-      <Modified>2023-06-14T11:53:59.667</Modified>
+      <Modified>2023-08-14T12:20:12.731</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
       <PackagePath>dotnet_bot.scale-400.png</PackagePath>
-      <Modified>2023-06-14T11:53:59.748</Modified>
+      <Modified>2023-08-14T12:20:12.733</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\Shared\MainLayout.razor.css">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\Shared\MainLayout.razor.css">
       <PackagePath>Shared\MainLayout.razor.css</PackagePath>
-      <Modified>2023-05-28T04:29:56.070</Modified>
+      <Modified>2023-08-14T12:20:05.022</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\Shared\NavMenu.razor.css">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\Shared\NavMenu.razor.css">
       <PackagePath>Shared\NavMenu.razor.css</PackagePath>
-      <Modified>2023-05-25T07:21:06.298</Modified>
+      <Modified>2023-08-14T12:20:05.022</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

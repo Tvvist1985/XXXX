@@ -10,31 +10,31 @@
     <PackageArchitecture>x64</PackageArchitecture>
     <PackageIdentityName>C83FA449-4797-485C-9527-DCA015162A0C</PackageIdentityName>
     <PackageIdentityPublisher>CN=User Name</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\</IntermediateOutputPath>
+    <IntermediateOutputPath>E:\Here\XXXX\XXX\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\</IntermediateOutputPath>
     <RemoteDeploymentType>CopyToDevice</RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>
     <RemoveNonLayoutFiles>false</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath></WindowsSdkPath>
-    <LayoutDir>C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\AppX</LayoutDir>
+    <LayoutDir>E:\Here\XXXX\XXX\Cuby\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\AppX</LayoutDir>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
+    <AppXManifest Include="E:\Here\XXXX\XXX\Cuby\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\resources.pri">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\Cuby.runtimeconfig.json">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\Cuby.runtimeconfig.json">
       <PackagePath>Cuby.runtimeconfig.json</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\Cuby.dll">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\Cuby.dll">
       <PackagePath>Cuby.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\apphost.exe">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>Cuby.exe</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Twist\.nuget\packages\microsoft.netcore.app.runtime.win-x64\6.0.12\runtimes\win-x64\lib\net6.0\Microsoft.CSharp.dll">
@@ -880,13 +880,13 @@
     <AppxPackagedFile Include="C:\Users\Twist\.nuget\packages\microsoft.windowsappsdk\1.1.3\runtimes\win10-x64\native\Microsoft.WindowsAppRuntime.Bootstrap.dll">
       <PackagePath>Microsoft.WindowsAppRuntime.Bootstrap.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Models\bin\Debug\net6.0\Models.dll">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Models\bin\Debug\net6.0\Models.dll">
       <PackagePath>Models.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Services\bin\Debug\net6.0\Services.dll">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Services\bin\Debug\net6.0\Services.dll">
       <PackagePath>Services.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\Cuby.deps.json">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\Cuby.deps.json">
       <PackagePath>Cuby.deps.json</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Twist\.nuget\packages\microsoft.maui.controls.ref.win\6.0.548\ref\net6.0-windows10.0.19041\Microsoft.Maui.Controls.Compatibility.pri">
@@ -898,247 +898,250 @@
     <AppxPackagedFile Include="C:\Users\Twist\.nuget\packages\microsoft.maui.core.ref.win\6.0.548\ref\net6.0-windows10.0.19041\Microsoft.Maui.pri">
       <PackagePath>Microsoft.Maui.pri</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\Resources\Raw\AboutAssets.txt">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\scopedcss\bundle\Cuby.styles.css">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\scopedcss\bundle\Cuby.styles.css">
       <PackagePath>wwwroot\Cuby.styles.css</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\scopedcss\projectbundle\Cuby.bundle.scp.css">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\scopedcss\projectbundle\Cuby.bundle.scp.css">
       <PackagePath>wwwroot\Cuby.bundle.scp.css</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\wwwroot\css\app.css">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\wwwroot\css\app.css">
       <PackagePath>wwwroot\css\app.css</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\wwwroot\css\bootstrap\bootstrap.min.css">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\wwwroot\css\bootstrap\bootstrap.min.css">
       <PackagePath>wwwroot\css\bootstrap\bootstrap.min.css</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\wwwroot\css\bootstrap\bootstrap.min.css.map">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\wwwroot\css\bootstrap\bootstrap.min.css.map">
       <PackagePath>wwwroot\css\bootstrap\bootstrap.min.css.map</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\wwwroot\css\Images\Delete.png">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\wwwroot\css\Images\Delete.png">
       <PackagePath>wwwroot\css\Images\Delete.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\wwwroot\css\MainStyle.css">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\wwwroot\css\MainStyle.css">
       <PackagePath>wwwroot\css\MainStyle.css</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\wwwroot\css\MyStyle.css">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\wwwroot\css\MyStyle.css">
       <PackagePath>wwwroot\css\MyStyle.css</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\wwwroot\css\open-iconic\font\css\open-iconic-bootstrap.min.css">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\wwwroot\css\open-iconic\font\css\open-iconic-bootstrap.min.css">
       <PackagePath>wwwroot\css\open-iconic\font\css\open-iconic-bootstrap.min.css</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\wwwroot\css\open-iconic\font\fonts\open-iconic.eot">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\wwwroot\css\open-iconic\font\fonts\open-iconic.eot">
       <PackagePath>wwwroot\css\open-iconic\font\fonts\open-iconic.eot</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\wwwroot\css\open-iconic\font\fonts\open-iconic.otf">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\wwwroot\css\open-iconic\font\fonts\open-iconic.otf">
       <PackagePath>wwwroot\css\open-iconic\font\fonts\open-iconic.otf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\wwwroot\css\open-iconic\font\fonts\open-iconic.svg">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\wwwroot\css\open-iconic\font\fonts\open-iconic.svg">
       <PackagePath>wwwroot\css\open-iconic\font\fonts\open-iconic.svg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\wwwroot\css\open-iconic\font\fonts\open-iconic.ttf">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\wwwroot\css\open-iconic\font\fonts\open-iconic.ttf">
       <PackagePath>wwwroot\css\open-iconic\font\fonts\open-iconic.ttf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\wwwroot\css\open-iconic\font\fonts\open-iconic.woff">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\wwwroot\css\open-iconic\font\fonts\open-iconic.woff">
       <PackagePath>wwwroot\css\open-iconic\font\fonts\open-iconic.woff</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\wwwroot\css\open-iconic\FONT-LICENSE">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\wwwroot\css\open-iconic\FONT-LICENSE">
       <PackagePath>wwwroot\css\open-iconic\FONT-LICENSE</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\wwwroot\css\open-iconic\ICON-LICENSE">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\wwwroot\css\open-iconic\ICON-LICENSE">
       <PackagePath>wwwroot\css\open-iconic\ICON-LICENSE</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\wwwroot\css\open-iconic\README.md">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\wwwroot\css\open-iconic\README.md">
       <PackagePath>wwwroot\css\open-iconic\README.md</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\wwwroot\favicon.ico">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\wwwroot\favicon.ico">
       <PackagePath>wwwroot\favicon.ico</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\wwwroot\Images\Delete.png">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\wwwroot\Images\Delete.png">
       <PackagePath>wwwroot\Images\Delete.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\wwwroot\index.html">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\wwwroot\index.html">
       <PackagePath>wwwroot\index.html</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\wwwroot\MyScript.js">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\wwwroot\Locations.json">
+      <PackagePath>wwwroot\Locations.json</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\wwwroot\MyScript.js">
       <PackagePath>wwwroot\MyScript.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-100.png">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-100.png">
       <PackagePath>splashSplashScreen.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-125.png">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-125.png">
       <PackagePath>splashSplashScreen.scale-125.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-150.png">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-150.png">
       <PackagePath>splashSplashScreen.scale-150.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-200.png">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-200.png">
       <PackagePath>splashSplashScreen.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-400.png">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-400.png">
       <PackagePath>splashSplashScreen.scale-400.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Regular.ttf">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Regular.ttf">
       <PackagePath>OpenSans-Regular.ttf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico">
       <PackagePath>appicon.ico</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-100.png">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-100.png">
       <PackagePath>appiconLargeTile.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-125.png">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-125.png">
       <PackagePath>appiconLargeTile.scale-125.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-150.png">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-150.png">
       <PackagePath>appiconLargeTile.scale-150.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-200.png">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-200.png">
       <PackagePath>appiconLargeTile.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-400.png">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-400.png">
       <PackagePath>appiconLargeTile.scale-400.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-16.png">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-16.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-24.png">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-24.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-256.png">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-256.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-32.png">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-32.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-48.png">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-48.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-16.png">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-16.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-24.png">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-24.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-256.png">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-256.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-32.png">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-32.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-48.png">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-48.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-100.png">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-100.png">
       <PackagePath>appiconLogo.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-125.png">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-125.png">
       <PackagePath>appiconLogo.scale-125.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-150.png">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-150.png">
       <PackagePath>appiconLogo.scale-150.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-200.png">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-200.png">
       <PackagePath>appiconLogo.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-400.png">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-400.png">
       <PackagePath>appiconLogo.scale-400.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-16.png">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-16.png">
       <PackagePath>appiconLogo.targetsize-16.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-24.png">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-24.png">
       <PackagePath>appiconLogo.targetsize-24.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-256.png">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-256.png">
       <PackagePath>appiconLogo.targetsize-256.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-32.png">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-32.png">
       <PackagePath>appiconLogo.targetsize-32.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-48.png">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-48.png">
       <PackagePath>appiconLogo.targetsize-48.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-100.png">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-100.png">
       <PackagePath>appiconMediumTile.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-125.png">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-125.png">
       <PackagePath>appiconMediumTile.scale-125.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-150.png">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-150.png">
       <PackagePath>appiconMediumTile.scale-150.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-200.png">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-200.png">
       <PackagePath>appiconMediumTile.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-400.png">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-400.png">
       <PackagePath>appiconMediumTile.scale-400.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-100.png">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-100.png">
       <PackagePath>appiconSmallTile.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-125.png">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-125.png">
       <PackagePath>appiconSmallTile.scale-125.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-150.png">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-150.png">
       <PackagePath>appiconSmallTile.scale-150.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-200.png">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-200.png">
       <PackagePath>appiconSmallTile.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-400.png">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-400.png">
       <PackagePath>appiconSmallTile.scale-400.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-100.png">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-100.png">
       <PackagePath>appiconStoreLogo.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-125.png">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-125.png">
       <PackagePath>appiconStoreLogo.scale-125.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-150.png">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-150.png">
       <PackagePath>appiconStoreLogo.scale-150.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-200.png">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-200.png">
       <PackagePath>appiconStoreLogo.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-400.png">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-400.png">
       <PackagePath>appiconStoreLogo.scale-400.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-100.png">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-100.png">
       <PackagePath>appiconWideTile.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-125.png">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-125.png">
       <PackagePath>appiconWideTile.scale-125.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-150.png">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-150.png">
       <PackagePath>appiconWideTile.scale-150.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-200.png">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-200.png">
       <PackagePath>appiconWideTile.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
       <PackagePath>appiconWideTile.scale-400.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
       <PackagePath>dotnet_bot.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png">
       <PackagePath>dotnet_bot.scale-125.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png">
       <PackagePath>dotnet_bot.scale-150.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png">
       <PackagePath>dotnet_bot.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
       <PackagePath>dotnet_bot.scale-400.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\Shared\MainLayout.razor.css">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\Shared\MainLayout.razor.css">
       <PackagePath>Shared\MainLayout.razor.css</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Twist\Desktop\Cuby — копия — копия — копия — копия — копия %283%29 — копия — копия — копия\Cuby\Shared\NavMenu.razor.css">
+    <AppxPackagedFile Include="E:\Here\XXXX\XXX\Cuby\Shared\NavMenu.razor.css">
       <PackagePath>Shared\NavMenu.razor.css</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>

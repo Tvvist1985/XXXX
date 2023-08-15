@@ -30,10 +30,7 @@ else
                 <div class="triangle-min" style=" @OtherAction.RightArrowView" @onclick="ViewingPhotosRight"></div>
             </div>
         </div>
-        <h5 class="next-btn" @onclick="GetNextUser">NEXT</h5>
-
-        //Message
-        <h3 style="color:red; text-align:center">@MessageForAddUsers</h3>
+        <h5 class="next-btn" @onclick="GetNextUser">NEXT</h5>   
         if (!Switches.SwitchGlobalXXX)   @*Компоненты Логина*@
         {
             @if (!Switches.SwitchAccount)
@@ -92,8 +89,7 @@ else
     [CascadingParameter] public Action LayoutAfterRender { get; set; }//Включат Нав меню   
     private ICubyCollection Collection { get; set; }  //Класс перезарядки контейнеров    
     private IUserEvent UserEvent { get; set; } //События  
-    private string MessageForAddUsers { get; set; }
-   
+     
     protected override async void OnInitialized()
     {             
         LoginVM data = new AddJsonIdentity().DeserializeJsonFileAsync<LoginVM>(); //Получаю файлик с айнтефикацией
@@ -117,7 +113,7 @@ else
 
         Collection = new CubyCollection(result.Item1, new BirthdayValidationService()); //Класс перезарядки поьзлователей
 
-        //Тза за бага с Wait() пришлось делать так
+        //Из- за за бага с Wait() пришлось делать так
         await Collection.OnInitializedContainerAsync();//Перезаряжаю первый
         Collection.OnInitializedContainerAsync();  //отправляю на перезарядку второго контейнера
 
@@ -161,8 +157,9 @@ else
     {
         //Get next user
         Collection.GetNextUser();
-        //Render like icon 
-        UserEvent.LoadIcon(Collection.UsersContainers[Collection.NumberContainerForSelectUser][Collection.NumberSelectUser].Id, Collection.NumberContainerForSelectUser);
+        //Render like icon
+        if(UserEvent is not null)
+            UserEvent.LoadIcon(Collection.UsersContainers[Collection.NumberContainerForSelectUser][Collection.NumberSelectUser].Id, Collection.NumberContainerForSelectUser);
         //Render arrows
         OtherAction.LoadingImgArrowAsync((byte)Collection.UsersContainers[Collection.NumberContainerForSelectUser][Collection.NumberSelectUser].imageBase64.Length);
     }

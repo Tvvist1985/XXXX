@@ -15,7 +15,7 @@ namespace Services.CubyServices.CubyCollectionSR
         //Number container for select user
         public byte NumberContainerForSelectUser { get; set; } = 0;
         //Number for select user
-        public byte NumberSelectUser { get; set; } = 49;
+        public byte NumberSelectUser { get; set; }
         public byte NumberPhoto { get; set; } = 0;
 
         private readonly BirthdayValidationService birthdayValidation;
@@ -105,7 +105,7 @@ namespace Services.CubyServices.CubyCollectionSR
         //Method: Get Next user
         public void GetNextUser()
         {
-            //first number img
+            // Get first number img
             NumberPhoto = 0;
             //Get next container
             if (NumberSelectUser == UsersContainers[NumberContainerForSelectUser].Count() -1)
@@ -116,9 +116,7 @@ namespace Services.CubyServices.CubyCollectionSR
                 NumberContainerForSelectUser = (byte)(NumberContainerForSelectUser == 0 ? 1 : 0);
 
                 return;
-            }
-
-            //Increment  NumberSelectUser
+            }      
             ++NumberSelectUser;
         }                  
     }

@@ -1,6 +1,7 @@
 ﻿@using Models.JsonTpansportModel;
 @inject IHttpClientService IHttpClientService
 @inject NavigationManager NavigationManager
+@inject ILocationsSR ILocationsSR
 
 <div style="padding-bottom:30%;">
     <EditForm Model="AponentVM" OnSubmit="FindUsers">
@@ -27,19 +28,29 @@
         </div>
 
         <label>
-            City
+            Сountry
             <div>
-                <InputText class=" form-control input-required" @bind-Value="AponentVM.City"></InputText>
+                <InputSelect @bind-Value="AponentVM.Сountry" @oninput="() => Task.Run(() => ILocationsSR.GetNewCitiesForUserSearch(AponentVM.Сountry, AponentVM))" class="form-control input-required" style="width:70vw;">
+                    @foreach (var country in ILocationsSR.Locations)
+                    {
+                        <option value="@country.Key">@country.Key</option>
+                    }
+                </InputSelect>
             </div>
         </label>
         <div class="validation-message">
-            <ValidationMessage For="(() => AponentVM.City)"></ValidationMessage>
+            <ValidationMessage For="(() => AponentVM.Сountry)"></ValidationMessage>
         </div>
 
         <label>
-            Сountry
+            City
             <div>
-                <InputText class=" form-control input-required" @bind-Value="AponentVM.Сountry"></InputText>
+                <InputSelect @bind-Value="@AponentVM.City" class="form-control input-required" style="width:70vw;">
+                    @foreach (var city in ILocationsSR.Locations[AponentVM.Сountry])
+                    {
+                        <option value="@city.name">@city.name </option>
+                    }
+                </InputSelect>
             </div>
         </label>
         <div class="validation-message">
@@ -63,14 +74,19 @@
 </div>
 
 @code
-{      
+{
     [Parameter] public ICubyCollection Collection { get; set; }
 
     private AponentJson AponentVM { get; set; } 
 
     //Method: Получаю данные предыдущего поиска
-    protected async override Task OnInitializedAsync() =>     
-        AponentVM = Collection.DataForXXX.ApponentDataJson;           
+    protected async override Task OnInitializedAsync()
+    {
+        //Initialized dictionary
+        GetDictionaryLocations();
+        AponentVM = Collection.DataForXXX.ApponentDataJson;
+    }
+             
 
     //Method: Получаю данные из формы и записываю в базу и в куки
     private async void FindUsers()
@@ -83,4 +99,12 @@
         Switches.SelectMethodForSwitch(1);
         NavigationManager.NavigateTo("/", true);
     }   
+
+    //Method: Get dictionary locations
+    private void GetDictionaryLocations()
+    {
+        //Get Locations.json from static files  to string
+        using var stream = FileSystem.OpenAppPackageFileAsync("wwwroot/Locations.json").Result;
+        ILocationsSR.InitializeDictionary(stream);
+    }
 }
